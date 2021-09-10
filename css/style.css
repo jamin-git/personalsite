@@ -1,9 +1,23 @@
-#myVideo {
-  position: fixed;
+#background-video-index {
+  width: 99vw;
+  height: 150vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
   right: 0;
+  top: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  z-index: -1;
+}
+#background-video-port {
+  width: 99vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   z-index: -1;
 }
 
@@ -17,8 +31,7 @@
 
 /* Main Section CSS */
 .container-intro {
-  background-color: #293847;
-  opacity: 20;
+  background-color: rgba(41, 56, 71, 0.8);
   padding: 5% 15%;
 }
 
@@ -64,7 +77,7 @@
 
 /* Experience Section */
 .container-small {
-  background-color: #293847;
+  background-color: rgba(41, 56, 71, 0.8);
   padding: 3% 20%;
 }
 .heading-exp {
@@ -87,6 +100,12 @@
   padding-bottom: 5%;
   padding-top: 10%;
 }
+.link-heading {
+  font-family: "Lato", sans-serif;
+  font-size: 1.75rem;
+  color: white;
+  text-decoration: none;
+}
 .list-items {
   font-family: "Lato", sans-serif;
   font-size: 1.25rem;
@@ -97,8 +116,14 @@
 
 /* Contact Section */
 .container-contact {
+  /* background-color: rgba(40, 52, 64, 0.5); */
   background-color: #283440;
   padding: 3% 5%;
+}
+.container-socials {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
 }
 .heading-contact {
   font-family: "Lato", sans-serif;
@@ -107,7 +132,13 @@
   color: white;
   text-shadow: 2px 2px 10px #000000;
 }
+.btn-link {
+  color: grey;
+}
 
+.btn-link:hover {
+  color: #388bff;
+}
 
 
 .centered {
@@ -122,4 +153,47 @@
   width: 40%;
   margin-left: 30%;
   box-shadow: 2px 2px 10px #000000;
+}
+
+
+/* Portfolio CSS */
+.container-portfolio {
+  padding: 2% 5%;
+  background-color: rgba(40, 52, 64, 0.5);
+}
+.heading-portfolio {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px 10px #000000;
+  padding: 2% 0;
+}
+.portfolio {
+  width: 500px;
+  height: 375px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3% 3%;
+}
+.portfolio:hover {
+  padding: 0;
+  border-style: solid;
+  border-color: white;
+}
+
+
+/* CopyRight */
+footer {
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background-color: rgba(41, 56, 71, 1);
+}
+.copyright {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
 }

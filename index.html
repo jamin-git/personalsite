@@ -15,15 +15,20 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css" />
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
   <!-- JQuery Initialization -->
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 </head>
 
 <body>
-  <video autoplay muted loop id="myVideo">
-    <source src="img/shapes.mp4" type="video/mp4">
-  </video>
+
+  <video id="background-video-index" autoplay loop muted>
+    <source src="img/PersonalSiteBGL.mp4" type="video/mp4">
+</video>
+
 
   <div class="container-navbar">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,7 +39,7 @@
       <div class="collapse navbar-collapse container-navbar-inner" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="https://www.behance.net/jacobamin">Portfolio</a>
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
@@ -65,7 +70,9 @@
   <div class="container-about" id="about">
     <h1 class="heading-exp centered">About Me</h1>
     <p class="centered para">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Jacob Amin is a student at the Georgia Institute of Technology studying Computational Media.
+      Jacob is interested in combining visual design and computing to create tailored software experiences
+      for users. His main areas of interests include social psychology, social computing, visual design, and UI/UX Design.
     </p>
   </div>
 
@@ -82,8 +89,8 @@
           <li class="list-items">HTML/CSS/JS - Basic</li>
           <li class="list-items">c# - Novice</li>
           <li class="list-items">Python - Novice</li>
-          <h1 class="centered small-heading-exp">Resume</h1>
         </ul>
+        <a class="link-heading" href="https://docs.google.com/document/d/1Sc08TrQcN55g1_StRsX7y0DDhqeRMDlpMhSDN2PNWRs/edit?usp=sharing"><button type="button" class="btn btn-link"></button>Resume</a>
       </div>
       <div class="col-lg-4">
         <!-- <img src="img/divider.png" alt="divider" class="centered"> -->
@@ -96,8 +103,8 @@
           <li class="list-items">Adobe Illustrator</li>
           <li class="list-items">Adobe Photoshop</li>
           <li class="list-items">Adobe After Effects</li>
-          <h1 class="centered small-heading-exp">Portfolio</h1>
         </ul>
+        <a class="link-heading" href="https://www.behance.net/jacobamin"><button type="button" class="btn btn-link"></button>Portfolio</a>
       </div>
     </div>
   </div>
@@ -105,7 +112,12 @@
 
   <div class="container-contact" id="contact">
     <h1 class="heading-contact centered">Contact Me!</h1>
-
+    <div class="container-socials">
+      <a href="https://www.linkedin.com/in/jacobsamin/"><button type="button" class="btn btn-link"><i class="fab fa-linkedin fa-2x"></i></button></a>
+      <a href="mailto: jamin7@gatech.edu"><button type="button" class="btn btn-link"><i class="fas fa-envelope fa-2x"></i></button></a>
+      <a href="https://twitter.com/jaminign"><button type="button" class="btn btn-link"><i class="fab fa-twitter fa-2x"></i></button></a>
+      <a href="https://github.com/jamin-git"><button type="button" class="btn btn-link"><i class="fab fa-github fa-2x"></i></button></a>
+    </div>
   </div>
 
 
@@ -113,5 +125,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 </body>
-
+<footer>
+  <p class="copyright">Jacob Amin ©2021</p>
+</footer>
 </html>

@@ -1,46 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Jamin - Portfolio</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>Jamin - Portfolio</title>
 
-    <!-- Bootstrap & Stylesheets -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-    <!-- JQuery Initialization -->
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <!-- Bootstrap & Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
 
-  </head>
-  <body>
+  <!-- JQuery Initialization -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-    <div class="container-navbar">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand lato-title container-navbar-inner" href="index.html">Jamin</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse container-navbar-inner" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+</head>
+
+<body>
+
+  <video id="background-video-port" autoplay loop muted>
+    <source src="img/PersonalSiteBGL.mp4" type="video/mp4">
+  </video>
+
+  <div class="container-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand lato-title container-navbar-inner" href="index.html">Jacob Amin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse container-navbar-inner" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html #about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html #experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html #contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-portfolio">
+    <h1 class="heading-portfolio centered">Portfolio</h1>
+    <div class="row">
+      <div class="col-lg-4">
+        <a href="https://www.behance.net/gallery/126744619/Knights-of-the-Round-Smashgg-Page-Assets"><img class="portfolio" src="img/KRCover.png" alt="Knights of the Round Cover"></a>
+      </div>
+      <div class="col-lg-4">
+        <a href="https://www.behance.net/gallery/126741451/Combo-Bros-Smashgg-Assets"><img class="portfolio" src="img/CBCover.png" alt="Combo Bros Cover"></a>
+      </div>
+      <div class="col-lg-4">
+        <a href="https://www.behance.net/gallery/126741071/To-The-Top-Graphic-Assets"><img class="portfolio" src="img/TTTCover.png" alt="To The Top! Cover"></a>
+      </div>
+      <div class="col-lg-4">
+        <a href="https://www.behance.net/gallery/126743313/Stream-Transitions"><img class="portfolio" src="img/VVCover.png" alt="Motion Graphics Cover"></a>
+      </div>
+      <div class="col-lg-4">
+        <a href="https://www.behance.net/gallery/126749665/Top-8-Banners"><img class="portfolio" src="img/T8Cover.png" alt="Top 8 Graphics Cover"></a>
+      </div>
+      <div class="col-lg-4">
+        <a href="https://www.behance.net/gallery/126750153/Jamin-Valorant-Assets"><img class="portfolio" src="img/ValCover.png" alt="Jamin Valorant Cover"></a>
+      </div>
     </div>
+  </div>
+</body>
+<footer>
+  <p class="copyright">Jacob Amin ©2021</p>
+</footer>
 
-    <h1>Portfolio</h1>
-  </body>
 </html>
