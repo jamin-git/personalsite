@@ -11,7 +11,7 @@
 }
 #background-video-port {
   width: 99vw;
-  height: 100vh;
+  height: 110vh;
   object-fit: cover;
   position: absolute;
   left: 0;
@@ -178,9 +178,16 @@
   padding: 3% 3%;
 }
 .portfolio:hover {
+  -webkit-filter: brightness(40%);
   padding: 0;
   border-style: solid;
   border-color: white;
+}
+.port-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: white;
 }
 
 
