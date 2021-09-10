@@ -1,5 +1,10 @@
-body {
-  background-color: #293847;
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 .lato-title {
@@ -8,4 +13,113 @@ body {
 }
 .container-navbar-inner {
   padding: 0 5%;
+}
+
+/* Main Section CSS */
+.container-intro {
+  background-color: #293847;
+  opacity: 20;
+  padding: 5% 15%;
+}
+
+.heading-main {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  color: white;
+  /* text-shadow: 2px 2px 10px #000000; */
+}
+.main-spacing {
+  padding-left: 15%;
+  padding-top: 8%;
+}
+.sub-heading-main {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  padding-top: 3%;
+  padding-left: 55%;
+}
+.blue-text {
+  color: #388bff;
+  text-shadow: 2px 2px 10px #000000;
+}
+.white-text {
+  color: white;
+}
+
+/* About Section */
+.container-about {
+  background-color: #283440;
+  padding: 3% 5%;
+}
+
+.para {
+  padding: 2% 15%;
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 1.25rem;
+}
+
+
+/* Experience Section */
+.container-small {
+  background-color: #293847;
+  padding: 3% 20%;
+}
+.heading-exp {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 10px #000000;
+}
+.sub-heading-exp {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+}
+.small-heading-exp {
+  font-family: "Lato", sans-serif;
+  font-size: 1.75rem;
+  color: white;
+  padding-bottom: 5%;
+  padding-top: 10%;
+}
+.list-items {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+
+  padding-top: 3%;
+}
+
+/* Contact Section */
+.container-contact {
+  background-color: #283440;
+  padding: 3% 5%;
+}
+.heading-contact {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 10px #000000;
+}
+
+
+
+.centered {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+
+.pfp {
+  border-radius: 30%;
+  width: 40%;
+  margin-left: 30%;
+  box-shadow: 2px 2px 10px #000000;
 }
