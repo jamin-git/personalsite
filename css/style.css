@@ -1,4 +1,4 @@
-#background-video-index {
+/* #background-video-index {
   width: 99vw;
   height: 170vh;
   object-fit: cover;
@@ -19,6 +19,48 @@
   top: 0;
   bottom: 0;
   z-index: -1;
+} */
+
+/* Hollow Shapes to use for Animation */
+a.circle {
+  -moz-border-radius: 100px/100px;
+  -webkit-border-radius: 100px 100px;
+  border-radius: 100px/100px;
+  border: solid 21px#0F9D58;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+
+  position: absolute;
+  left: 200px;
+  top: 1300px;  
+}
+
+a.square {
+  border: solid 30px #DB4437;
+  border-radius: 25px;
+  width: 250px;
+  height: 250px;
+  z-index: -1;
+
+  position: absolute;
+  left: 1000px;
+  top: -200px;
+}
+
+a.triangle {
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 10%;
+  left: 7px;
+  border-left: 7px solid white;
+  border-right: 7px solid white;
+  border-top: 7px solid white;
+}
+
+body {
+  background-color: #000000;
 }
 
 .lato-title {
@@ -88,13 +130,13 @@
   text-shadow: 2px 2px 10px #000000;
 }
 .sub-heading-exp {
-  font-family: "Lato", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: white;
 }
 .small-heading-exp {
-  font-family: "Lato", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.75rem;
   color: white;
   padding-bottom: 5%;
