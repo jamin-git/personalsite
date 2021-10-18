@@ -1,13 +1,15 @@
+// Script Not Being Used Currently
+
 var square = document.querySelector('.square');
 var squareAnimation = anime({
     targets: square,
     top: [
-        {value: "1400px", duration: 6000},
-        {value: "-200px", duration: 6000}
+        {value: "15%", duration: 6000},
+        {value: "-15%", duration: 6000}
     ],
     left: [
-        {value: "300px", duration: 6000},
-        {value: "1000px", duration: 6000}
+        {value: "5%", duration: 6000},
+        {value: "0", duration: 6000}
     ],
     rotateZ: [
         {value: "360", duration: 12000},
@@ -27,4 +29,13 @@ var circleAnimation = anime({
     loop: true
 });
 
-var triangle = document.querySelector();
+var bSquare = document.querySelector(".bSquare");
+var bSquareAnimation = anime({
+    targets: bSquare,
+    translateX: [
+        {value: 100, duration: 2000},
+    ],
+    translateY: [
+        {value: 100, duration: 2000},
+    ],
+});

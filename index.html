@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
   <!-- Bootstrap & Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -28,26 +29,25 @@
 
 <body>
 
-  <!-- <video id="background-video-index" autoplay loop muted>
+  <video id="background-video-index" autoplay loop muted>
     <source src="img/PersonalSiteBGL.mp4" type="video/mp4">
-</video> -->
+</video>
 
 <!-- Background Shapes -->
-<a class="square">
-  <img id="squareAnimation"/>
+<!-- <a class="square">
+  <img src="img/animationAssets/RedSquare.png">
 </a>
 <a class="circle">
   <img id="circleAnimation"/>
-</a>
-<a class="triangle">
+</a> -->
+<!-- <a class="triangle">
   <img id="circleAnimation"/>
-</a>
+</a> -->
 
-<script src="animation.js"></script>
 
   <div class="container-navbar">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand lato-title container-navbar-inner" href="index.html"><img src="img/JaminHeaderv2.png" alt="Jacob Amin Header"></a>
+      <a class="navbar-brand container-navbar-inner" href="index.html"><img src="img/JaminHeaderv2.png" alt="Jacob Amin Header"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -92,39 +92,88 @@
     </p>
   </div>
 
-
-
   <div class="container-small" id="experience">
+    <!-- <img src="img/svg/BSquare.svg" alt="Blue Square" class="bSquare"> -->
+    <h1 class="centered heading-exp">Experience</h1>
+    <h1 class="sub-heading-exp">DEVELOPEMENT</h1>
     <div class="row">
-      <h1 class="centered heading-exp">Experience</h1>
-      <div class="col-lg-4">
-        <h1 class="centered sub-heading-exp">Development</h1>
-        <h2 class="left small-heading-exp">Programming Languages</h2>
-        <ul>
-          <li class="list-items">Java - Intermediate</li>
-          <li class="list-items">HTML/CSS/JS - Basic</li>
-          <li class="list-items">c# - Novice</li>
-          <li class="list-items">Python - Novice</li>
-        </ul>
-        <a class="link-heading" href="https://docs.google.com/document/d/1Sc08TrQcN55g1_StRsX7y0DDhqeRMDlpMhSDN2PNWRs/edit?usp=sharing"><button type="button" class="btn btn-link"></button>Resume</a>
+      <div class="col-lg-6 heading-config card-format">
+        <div class="card text-white bg-dark mb-3" style="max-width: 45rem;">
+          <div class="card-header">
+            <h1>HTML</h1>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Experience Level: Intermediate</h5>
+            <p class="card-text">1+ Years of Experience designing personal sites and various projects.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-4">
-        <!-- <img src="img/divider.png" alt="divider" class="centered"> -->
+
+      <div class="col-lg-6 heading-config card-format">
+        <div class="card text-white bg-dark mb-3" style="max-width: 45rem;">
+          <div class="card-header">
+            <h1>CSS</h1>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Experience Level: Intermediate</h5>
+            <p class="card-text">1+ Years of Experience designing personal sites and various projects.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-4">
-        <h1 class="centered sub-heading-exp">Design</h1>
-        <h2 class="left small-heading-exp">Programs</h2>
-        <ul>
-          <li class="list-items">Adobe Premiere Pro</li>
-          <li class="list-items">Adobe Illustrator</li>
-          <li class="list-items">Adobe Photoshop</li>
-          <li class="list-items">Adobe After Effects</li>
-        </ul>
-        <a class="link-heading" href="https://www.behance.net/jacobamin"><button type="button" class="btn btn-link"></button>Portfolio</a>
+
+      <div class="col-lg-6 heading-config card-format">
+        <div class="card text-white bg-dark mb-3" style="max-width: 45rem;">
+          <div class="card-header">
+            <h1>JavaScript</h1>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Experience Level: Basic</h5>
+            <p class="card-text">6+ Months of Experience designing personal sites and various projects.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 heading-config card-format">
+        <div class="card text-white bg-dark mb-3" style="max-width: 45rem;">
+          <div class="card-header">
+            <h1>Java</h1>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Experience Level: Intermediate</h5>
+            <p class="card-text">2+ Years of Experience creating programs. Proficiency in JavaFX and SWING</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h1 class="sub-heading-exp">DESIGN</h1>
+    <div class="row">
+      <div class="col-lg-6 heading-config card-format">
+        <div class="card text-white bg-dark mb-3" style="max-width: 45rem;">
+          <div class="card-header">
+            <h1>Adobe Creative Cloud</h1>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Experience Level: Intermediate</h5>
+            <p class="card-text">4+ Years of Experience designing various projects. Proficiency in Adobe Premiere Pro, After Effects, Photoshop, Illustrator, etc.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 heading-config card-format">
+        <div class="card text-white bg-dark mb-3" style="max-width: 45rem;">
+          <div class="card-header">
+            <h1>Figma</h1>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Experience Level: Basic</h5>
+            <p class="card-text">6+ months of experience designing prototypes, wireframes, and more.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
 
   <div class="container-contact" id="contact">
     <h1 class="heading-contact centered">Contact Me!</h1>
@@ -140,6 +189,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  <!-- <script src="animation.js"></script> -->
 </body>
 <footer>
   <p class="copyright">Jacob Amin ©2021</p>

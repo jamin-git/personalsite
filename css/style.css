@@ -1,6 +1,6 @@
-/* #background-video-index {
+#background-video-index {
   width: 99vw;
-  height: 170vh;
+  height: 196vh;
   object-fit: cover;
   position: absolute;
   left: 0;
@@ -11,7 +11,7 @@
 }
 #background-video-port {
   width: 99vw;
-  height: 135vh;
+  height: 123vh;
   object-fit: cover;
   position: absolute;
   left: 0;
@@ -19,10 +19,10 @@
   top: 0;
   bottom: 0;
   z-index: -1;
-} */
+}
 
 /* Hollow Shapes to use for Animation */
-a.circle {
+/* a.circle {
   -moz-border-radius: 100px/100px;
   -webkit-border-radius: 100px 100px;
   border-radius: 100px/100px;
@@ -32,8 +32,8 @@ a.circle {
   z-index: -1;
 
   position: absolute;
-  left: 200px;
-  top: 1300px;  
+  left: 7%;
+  top: 135%;  
 }
 
 a.square {
@@ -44,8 +44,8 @@ a.square {
   z-index: -1;
 
   position: absolute;
-  left: 1000px;
-  top: -200px;
+  left: 70%;
+  top: -15%;
 }
 
 a.triangle {
@@ -57,16 +57,46 @@ a.triangle {
   border-left: 7px solid white;
   border-right: 7px solid white;
   border-top: 7px solid white;
+} */
+
+a.square {
+  position: absolute;
+  left: 10%;
+  top: -15%;
+  z-index: -1;
 }
+
+a.circle {
+  position: absolute;
+  left: 70%;
+  top: -15%;
+  z-index: -1;
+}
+
+a.triangle {
+  position: absolute;
+  left: 70%;
+  top: -15%;
+  z-index: -1;
+}
+
+.bSquare {
+  position: flex;
+  display: block;
+  width: 1.5%;
+}
+
+.card-format {
+  padding-top: 2%;
+  padding-left: 4%;
+}
+
 
 body {
   background-color: #000000;
 }
 
-.lato-title {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-}
+
 .container-navbar-inner {
   padding: 0 5%;
 }
@@ -78,22 +108,26 @@ body {
 }
 
 .heading-main {
-  font-family: "Lato", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 900;
   font-size: 4rem;
   color: white;
-  /* text-shadow: 2px 2px 10px #000000; */
+
 }
 .main-spacing {
   padding-left: 15%;
   padding-top: 8%;
 }
 .sub-heading-main {
-  font-family: "Lato", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 900;
   font-size: 3rem;
   padding-top: 3%;
   padding-left: 55%;
+}
+
+.blue-color {
+  color: #388bff;
 }
 .blue-text {
   color: #388bff;
@@ -105,7 +139,7 @@ body {
 
 /* About Section */
 .container-about {
-  background-color: #283440;
+  background-color: #111111;
   padding: 3% 5%;
 }
 
@@ -120,23 +154,23 @@ body {
 /* Experience Section */
 .container-small {
   background-color: rgba(41, 56, 71, 0.8);
-  padding: 3% 20%;
+  padding: 3% 5%;
 }
 .heading-exp {
-  font-family: "Lato", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-size: 3rem;
   color: white;
   text-shadow: 2px 2px 10px #000000;
 }
 .sub-heading-exp {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: white;
 }
 .small-heading-exp {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.75rem;
   color: white;
   padding-bottom: 5%;
@@ -149,17 +183,17 @@ body {
   text-decoration: none;
 }
 .list-items {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   color: white;
 
-  padding-top: 3%;
+  /* padding-top: 3%; */
 }
 
 /* Contact Section */
 .container-contact {
   /* background-color: rgba(40, 52, 64, 0.5); */
-  background-color: #283440;
+  background-color: #111111;
   padding: 3% 5%;
 }
 .container-socials {
@@ -168,7 +202,7 @@ body {
   padding-top: 1%;
 }
 .heading-contact {
-  font-family: "Lato", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-size: 3rem;
   color: white;
