@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&family=Russo+One&family=Source+Code+Pro&display=swap" rel="stylesheet">
 
   <!-- Bootstrap & Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -28,24 +29,24 @@
 </head>
 
 <body>
+  <div class="home flex">
+    <div id="intro-square" class="square"></div>
+    <div id="intro-circle" class="circle"></div>
+    <svg id="intro-triangle" class="triangle-svg" width="500" height="500" viewBox="-50 -50 300 300">
+      <polygon class="triangle" stroke-linejoin="round" points="100,0 0,200 200,200"/>
+    </svg>
+    <div class="flex" style="z-index: 1;">
+      <p class="white-color header-font medium-text centered" style="padding-bottom: 1%;">
+        Hey! I'm <span class="blue-color">Jacob Amin</span>
+        <br>
+        I do <span class="grey-color coding-font">&lt;<span id ="developer-heading"></span>/&gt;</span> & <span class="grey-color design-font">design</span>
+      </p>
+      <button type="button" class="btn btn-outline-light default-font small-text">View my work &nbsp<i class="fas fa-angle-down"></i></button>
+    </div>
+  </div>
+  
 
-  <!-- <video id="background-video-index" autoplay loop muted>
-    <source src="img/PersonalSiteBGL.mp4" type="video/mp4">
-</video> -->
-
-<!-- Background Shapes -->
-<!-- <a class="square">
-  <img src="img/animationAssets/RedSquare.png">
-</a>
-<a class="circle">
-  <img id="circleAnimation"/>
-</a> -->
-<!-- <a class="triangle">
-  <img id="circleAnimation"/>
-</a> -->
-
-
-  <div class="container-navbar">
+  <!-- <div class="container-navbar">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand container-navbar-inner" href="index.html"><img src="img/JaminHeaderv2.png" alt="Jacob Amin Header"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,119 +69,200 @@
         </ul>
       </div>
     </nav>
+  </div> -->
+
+  <div id="intro" class="intro flex">
+    <h1 class="header-font-bold grey-color centered">ABOUT</h1>
+    <hr class="rect">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="img/jaminpfp.png" alt="pfp" class="pfp centered">
+        <p class="centered default-font grey-color">
+          <br>This is me!
+        </p>
+      </div>
+      <div class="col-lg-8 inbetween">
+        <p class="centered default-font grey-color small-text">
+          I am currently a student at Georgia Tech studying <br>
+          Computational Media. I am intruiged by the process of combining <br>
+          design and development to make interfaces more accessible. <br>
+          My main areas of interest include social computing,<br>
+          visual design, and UI/UX design.
+        </p>
+      </div>
+    </div>
   </div>
 
-  <div class="container-intro" id="Intro">
+  <div class="skills" id="skills">
+    <h1 class="header-font-bold grey-color centered">SKILLS</h1>
+    <hr class="rect">
     <div class="row">
-      <div class="col-lg-6 heading-config">
-        <h1 class="heading-main main-spacing">Hey! I'm Jacob</h1>
-        <h1 class="sub-heading-main">AKA <span class="blue-text">Jamin</span></h1>
+      <div class="col-lg-6">
+        <p class="grey-color default-font centered medium-text">DEVELOPMENT</p>
+        <div class="block">
+          <img src="img/svg/development.svg" alt="development" style="padding: 10% 10%">
+          <!-- <div class="row">
+            <div class="col-lg-4">
+              <div class="circle-skill blue-color default-font small-text">HTML</div>
+            </div>
+            <div class="col-lg-4">
+              <div class="circle-skill blue-color default-font small-text">CSS</div>
+            </div>
+            <div class="col-lg-4">
+              <div class="circle-skill blue-color default-font small-text">JS</div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="circle-skill blue-color default-font small-text">Java</div>
+            </div>
+            <div class="col-lg-4">
+              <div class="circle-skill blue-color default-font small-text">React</div>
+            </div>
+            <div class="col-lg-4">
+              <div class="circle-skill blue-color default-font small-text">Node</div>
+            </div>
+          </div> -->
+        </div>
       </div>
       <div class="col-lg-6">
-        <img src="img/jaminpfp.png" alt="Profile Picture" class="pfp">
+        <div class="block">
+          <p class="grey-color default-font centered medium-text">DESIGN</p>
+          <img src="img/svg/design.svg" alt="development" style="padding: 10% 10%">
+        </div>
+        <!-- <div class="circle-skill blue-color default-font small-text">Illustrator</div>
+        <div class="circle-skill blue-color default-font small-text">Photoshop</div>
+        <div class="circle-skill blue-color default-font small-text">After Effects</div>
+        <br>
+        <div class="circle-skill blue-color default-font small-text">Premiere Pro</div>
+        <div class="circle-skill blue-color default-font small-text">Figma</div> -->
       </div>
     </div>
   </div>
+  
+  <div class="container-portfolio">
+    <h1 class="header-font-bold grey-color centered">PROJECTS</h1>
+    <hr class="rect">
 
-  <div class="container-about" id="about">
-    <h1 class="heading-exp centered">About Me</h1>
-    <p class="centered para">
-      I am currently a student at Georgia Tech studying Computational Media (People & Interaction Design Threads).
-      I am intrigued in the process of combining design and computing to make softwares more accessible to the general population.
-      My main areas of interest include social psychology, social computing, visual design, and UI/UX Design.
-      </main>
-    </p>
+    <div id="carouselExampleControls" class="carousel carousel-dark slide " data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126744619/Knights-of-the-Round-Smashgg-Page-Assets"><img class="portfolio" src="img/KRCover.png" alt="Knights of the Round Cover"></a>
+              <p class="port-text centered">Knights of the Round Smash.gg Assets</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126741451/Combo-Bros-Smashgg-Assets"><img class="portfolio" src="img/CBCover.png" alt="Combo Bros Cover"></a>
+              <p class="port-text centered">Combo Bros 7 Smash.gg Assets</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126741071/To-The-Top-Graphic-Assets"><img class="portfolio" src="img/TTTCover.png" alt="To The Top! Cover"></a>
+              <p class="port-text centered">To The Top! Graphic Assets</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126743313/Stream-Transitions"><img class="portfolio" src="img/VVCover.png" alt="Motion Graphics Cover"></a>
+              <p class="port-text centered">Motion Graphic Transitions</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126749665/Top-8-Banners"><img class="portfolio" src="img/T8Cover.png" alt="Top 8 Graphics Cover"></a>
+              <p class="port-text centered">Top 8 Banners</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126750153/Jamin-Valorant-Assets"><img class="portfolio" src="img/ValCover.png" alt="Jamin Valorant Cover"></a>
+              <p class="port-text centered">Jamin Youtube Assets</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126744619/Knights-of-the-Round-Smashgg-Page-Assets"><img class="portfolio" src="img/KRCover.png" alt="Knights of the Round Cover"></a>
+              <p class="port-text centered">Knights of the Round Smash.gg Assets</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126741451/Combo-Bros-Smashgg-Assets"><img class="portfolio" src="img/CBCover.png" alt="Combo Bros Cover"></a>
+              <p class="port-text centered">Combo Bros 7 Smash.gg Assets</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126741071/To-The-Top-Graphic-Assets"><img class="portfolio" src="img/TTTCover.png" alt="To The Top! Cover"></a>
+              <p class="port-text centered">To The Top! Graphic Assets</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126743313/Stream-Transitions"><img class="portfolio" src="img/VVCover.png" alt="Motion Graphics Cover"></a>
+              <p class="port-text centered">Motion Graphic Transitions</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126749665/Top-8-Banners"><img class="portfolio" src="img/T8Cover.png" alt="Top 8 Graphics Cover"></a>
+              <p class="port-text centered">Top 8 Banners</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126750153/Jamin-Valorant-Assets"><img class="portfolio" src="img/ValCover.png" alt="Jamin Valorant Cover"></a>
+              <p class="port-text centered">Jamin Youtube Assets</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126744619/Knights-of-the-Round-Smashgg-Page-Assets"><img class="portfolio" src="img/KRCover.png" alt="Knights of the Round Cover"></a>
+              <p class="port-text centered">Knights of the Round Smash.gg Assets</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126741451/Combo-Bros-Smashgg-Assets"><img class="portfolio" src="img/CBCover.png" alt="Combo Bros Cover"></a>
+              <p class="port-text centered">Combo Bros 7 Smash.gg Assets</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126741071/To-The-Top-Graphic-Assets"><img class="portfolio" src="img/TTTCover.png" alt="To The Top! Cover"></a>
+              <p class="port-text centered">To The Top! Graphic Assets</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126743313/Stream-Transitions"><img class="portfolio" src="img/VVCover.png" alt="Motion Graphics Cover"></a>
+              <p class="port-text centered">Motion Graphic Transitions</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126749665/Top-8-Banners"><img class="portfolio" src="img/T8Cover.png" alt="Top 8 Graphics Cover"></a>
+              <p class="port-text centered">Top 8 Banners</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="https://www.behance.net/gallery/126750153/Jamin-Valorant-Assets"><img class="portfolio" src="img/ValCover.png" alt="Jamin Valorant Cover"></a>
+              <p class="port-text centered">Jamin Youtube Assets</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
-
-  <div class="container-small" id="experience">
-    <h1 class="centered heading-exp">Experience</h1>
-    <h1 class="sub-heading-exp">DEVELOPMENT</h1>
-
-      <div class="card text-white bg-dark mb-3" style="max-width: 45rem;">
-
-        <!-- <svg width="100%" height="100%" class="behind">
-          <rect width="100%" height="100%" style="fill:transparent;stroke-width:5;stroke:rgb(255 ,255 , 255)" />
-        </svg> -->
-
-        <div class="card-header">
-          <h1>HTML</h1>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Experience Level: Intermediate</h5>
-          <p class="card-text">1+ Years of Experience designing personal sites and various projects.</p>
-        </div>
-      </div>
-
-      <div class="card text-white bg-dark mb-3" style="max-width: 45rem;">
-        <div class="card-header">
-          <h1>CSS</h1>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Experience Level: Intermediate</h5>
-          <p class="card-text">1+ Years of Experience designing personal sites and various projects.</p>
-        </div>
-      </div>
-
-      <div class="card text-white bg-dark mb-3" style="max-width: 45rem;">
-        <div class="card-header">
-          <h1>JavaScript</h1>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Experience Level: Basic</h5>
-          <p class="card-text">6+ Months of Experience designing personal sites and various projects.</p>
-        </div>
-      </div>
-
-    <div class="card text-white bg-dark mb-3" style="max-width: 45rem;">
-      <div class="card-header">
-        <h1>Java</h1>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Experience Level: Intermediate</h5>
-        <p class="card-text">2+ Years of Experience creating programs. Proficiency in JavaFX and SWING</p>
-      </div>
-    </div>
-
-    <h1 class="sub-heading-exp">DESIGN</h1>
-    
-    <div class="card text-white bg-dark mb-3" style="max-width: 45rem;">
-      <div class="card-header">
-        <h1>Adobe Creative Cloud</h1>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Experience Level: Intermediate</h5>
-        <p class="card-text">4+ Years of Experience designing various projects. Proficiency in Adobe Premiere Pro, After Effects, Photoshop, Illustrator, etc.</p>
-      </div>
-    </div>
-
-    <div class="card text-white bg-dark mb-3" style="max-width: 45rem;">
-      <div class="card-header">
-        <h1>Figma</h1>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Experience Level: Basic</h5>
-        <p class="card-text">6+ months of experience designing prototypes, wireframes, and more.</p>
-      </div>
-    </div>
-
-
-  <div class="container-contact" id="contact">
-    <h1 class="heading-contact centered">Contact Me!</h1>
-    <div class="container-socials">
-      <a href="https://www.linkedin.com/in/jacobsamin/"><button type="button" class="btn btn-link"><i class="fab fa-linkedin fa-2x"></i></button></a>
-      <a href="mailto: jamin7@gatech.edu"><button type="button" class="btn btn-link"><i class="fas fa-envelope fa-2x"></i></button></a>
-      <!-- <a href="https://twitter.com/jaminign"><button type="button" class="btn btn-link"><i class="fab fa-twitter fa-2x"></i></button></a> -->
-      <a href="https://github.com/jamin-git"><button type="button" class="btn btn-link"><i class="fab fa-github fa-2x"></i></button></a>
-    </div>
-  </div>
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  
+  <!-- Typed.js Script -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- Animations Script -->
   <script src="animation.js"></script>
 </body>
+
 <footer>
-  <p class="copyright">Jacob Amin ©2021</p>
+  <div class="contact" id="contact">
+    <h1 class="header-font white-color centered">CONTACT</h1>
+    <hr class="rect-blue">
+    <div class="container-socials">
+      <a href="https://www.linkedin.com/in/jacobsamin/"><button type="button" class="btn btn-link"><i class="fab fa-linkedin fa-2x"></i></button></a>
+      <a href="mailto: jamin7@gatech.edu"><button type="button" class="btn btn-link"><i class="fas fa-envelope fa-2x"></i></button></a>
+      <a href="https://github.com/jamin-git"><button type="button" class="btn btn-link"><i class="fab fa-github fa-2x"></i></button></a>
+    </div>
+    <p class="default-font white-color centered"><span class="blue-color">Jacob Amin</span> ©2021</p>
+  </div>
 </footer>
+
 </html>

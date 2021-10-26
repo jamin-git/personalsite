@@ -5,118 +5,120 @@ bDark: #20232a
 bMedium: #282c34
 bLight: #32363e */
 
-
-
-
-
-#background-video-index {
-  width: 99vw;
-  height: 196vh;
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
+@font-face {
+  font-family: muli;
+  src: url("fonts/muli/muli.ttf");
 }
-#background-video-port {
-  width: 99vw;
-  height: 123vh;
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
+@font-face {
+  font-family: muli-bold;
+  src: url("fonts/muli/muli-bold.ttf");
 }
 
 /* Hollow Shapes to use for Animation */
-/* a.circle {
+.circle {
   -moz-border-radius: 100px/100px;
   -webkit-border-radius: 100px 100px;
-  border-radius: 100px/100px;
-  border: solid 21px#0F9D58;
-  width: 200px;
-  height: 200px;
-  z-index: -1;
+  border-radius: 200px/200px;
+  border: solid 21px#32363e;
+  width: 400px;
+  height: 400px;
 
   position: absolute;
-  left: 7%;
-  top: 135%;  
+  top: 10%;
+  right: -25%;
 }
 
-a.square {
-  border: solid 30px #DB4437;
+.square {
+  border: solid 30px #32363e;
   border-radius: 25px;
   width: 250px;
   height: 250px;
-  z-index: -1;
-
   position: absolute;
-  left: 70%;
-  top: -15%;
+  top: 65%;
+  left: -15%;
 }
 
-a.triangle {
+.triangle-svg {
   position: absolute;
-  height: 0;
-  width: 0;
-  top: 10%;
-  left: 7px;
-  border-left: 7px solid white;
-  border-right: 7px solid white;
-  border-top: 7px solid white;
-} */
+  top: 60%;
+  left: -25%;
+}
+.triangle {
+  fill: transparent;
+  stroke: #32363e;
+  stroke-width: 30;
+}
 
-.behind {
+/* Home Section */
+.home {
+  background-color: #282c34;
+  width: 99vw;
+  height:100vh;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 7%;
+}
+
+.large-text {
+  font-size: 4rem;
+}
+.medium-text {
+  font-size: 3rem;
+}
+.small-text {
+  font-size: 1.6rem;
+}
+
+.header-font {
+  font-family: "muli", sans-serif;
+  font-weight: 600;
+}
+.header-font-bold {
+  font-family: "muli-bold", sans-serif;
+  font-weight: 600;
+}
+.default-font {
+  font-family: 'Poppins', sans-serif;
+}
+.design-font {
+  font-family: 'Righteous', cursive;
+}
+.coding-font {
+  font-family: 'Source Code Pro', monospace;
+}
+.bg-image {
   position: absolute;
-}
-.cent {
-  position: flex;
-}
-
-#animated-border path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 0;
+  width: 99vw;
+  height:100vh;
 }
 
-a.square {
-  position: absolute;
-  left: 10%;
-  top: -15%;
-  z-index: -1;
+.circle-skill {
+  margin: 0 auto;
+  height: 150px;
+  width: 150px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 20%;
+  background: #282c34;
 }
 
-a.circle {
-  position: absolute;
-  left: 70%;
-  top: -15%;
-  z-index: -1;
-}
 
-a.triangle {
-  position: absolute;
-  left: 70%;
-  top: -15%;
-  z-index: -1;
-}
 
-.bSquare {
-  position: flex;
-  display: block;
-  width: 1.5%;
-}
 
-.card-format {
-  padding-top: 2%;
-  padding-left: 4%;
-}
+
+
+
 
 
 body {
   background-color: #282c34;
+  overflow-x: hidden;
 }
 
 
@@ -125,149 +127,93 @@ body {
 }
 
 /* Main Section CSS */
-.container-intro {
-  /* background-color: rgba(41, 56, 71, 0.8); */
-  padding: 5% 15%;
+.intro {
+  padding-top: 2%;
+  padding-bottom: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: white;
+  z-index: 2;
 }
-
-.heading-main {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 900;
-  font-size: 4rem;
-  color: white;
-
+.rect {
+  border-top: 3px solid #000000;
+  width: 5%;
+  margin: auto;
 }
-.main-spacing {
-  padding-left: 15%;
-  padding-top: 8%;
+.rect-blue {
+  border-top: 3px solid #61DAFB;
+  width: 5%;
+  margin: auto;
 }
-.sub-heading-main {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 900;
-  font-size: 3rem;
+.inbetween {
   padding-top: 3%;
-  padding-left: 55%;
-  color: #565d68;
 }
 
+.skills {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: rgb(240, 240, 240);
+}
+
+/* Text Colors */
 .blue-color {
-  color: #2077f4;
+  color: #61DAFB;
 }
-.blue-text {
-  color: #2077f4;
+.white-color {
+  color: white;
+}
+.grey-color {
+  color: #565D68;
+}
+.black-color {
+  color: black;
+}
+.shadow {
   text-shadow: 2px 2px 10px #000000;
 }
-.white-text {
-  color: white;
-}
 
-/* About Section */
-.container-about {
-  /* background-color: #111111; */
-  padding: 3% 5%;
-}
-
-.para {
-  padding: 2% 15%;
-  font-family: "Lato", sans-serif;
-  color: white;
-  font-size: 1.25rem;
-}
-
-
-/* Experience Section */
-.container-small {
-  background-color: rgba(41, 56, 71, 0.8);
-  padding: 3% 5%;
-}
-.heading-exp {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-  color: white;
-  text-shadow: 2px 2px 10px #000000;
-}
-.sub-heading-exp {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  color: white;
-}
-.small-heading-exp {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.75rem;
-  color: white;
-  padding-bottom: 5%;
-  padding-top: 10%;
-}
-.link-heading {
-  font-family: "Lato", sans-serif;
-  font-size: 1.75rem;
-  color: white;
-  text-decoration: none;
-}
-.list-items {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.25rem;
-  color: white;
-
-  /* padding-top: 3%; */
-}
 
 /* Contact Section */
-.container-contact {
-  /* background-color: rgba(40, 52, 64, 0.5); */
-  background-color: #111111;
+.contact {
   padding: 3% 5%;
 }
 .container-socials {
   display: flex;
   justify-content: center;
   padding-top: 1%;
-}
-.heading-contact {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-  color: white;
-  text-shadow: 2px 2px 10px #000000;
+  padding-bottom: 2%;
 }
 .btn-link {
   color: grey;
 }
 
 .btn-link:hover {
-  color: #388bff;
+  color: #61DAFB;
 }
 
 
 .centered {
   text-align: center;
 }
-.left {
-  text-align: left;
+.block {
+  display: block;
+  margin: auto;
 }
 
 .pfp {
+  display: block;
   border-radius: 30%;
-  width: 40%;
-  margin-left: 30%;
-  box-shadow: 2px 2px 10px #000000;
+  width: 55%;
+  margin: auto;
 }
 
 
 /* Portfolio CSS */
 .container-portfolio {
   padding: 2% 5%;
-  background-color: rgba(40, 52, 64, 0.5);
-}
-.heading-portfolio {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-size: 4rem;
-  color: white;
-  text-shadow: 2px 2px 10px #000000;
-  padding: 2% 0;
+  background-color: white;
 }
 .portfolio {
   width: 500px;
@@ -287,20 +233,5 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 500;
   font-size: 1.25rem;
-  color: white;
-}
-
-
-/* CopyRight */
-footer {
-  padding-top: 3%;
-  padding-bottom: 2%;
-  background-color: rgba(41, 56, 71, 1);
-}
-.copyright {
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
   color: white;
 }
