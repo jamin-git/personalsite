@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&family=Russo+One&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/ysk6kad.css">
 
   <!-- Bootstrap & Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -37,11 +38,11 @@
     </svg>
     <div class="flex" style="z-index: 1;">
       <p class="white-color header-font medium-text centered" style="padding-bottom: 1%;">
-        Hey! I'm <span class="blue-color">Jacob Amin</span>
+        <span class="header-font-bold">Hey! I'm <span class="blue-color">Jacob Amin</span></span>
         <br>
         I do <span class="grey-color coding-font">&lt;<span id ="developer-heading"></span>/&gt;</span> & <span class="grey-color design-font">design</span>
       </p>
-      <button type="button" class="btn btn-outline-light default-font small-text">View my work &nbsp<i class="fas fa-angle-down"></i></button>
+      <button type="button" class="btn btn-outline-light default-font small-text"><a class="button" href="#intro">View More! &nbsp<i class="fas fa-angle-down"></i></a></button>
     </div>
   </div>
   
@@ -85,9 +86,9 @@
         <p class="centered default-font grey-color small-text">
           I am currently a student at Georgia Tech studying <br>
           Computational Media. I am intruiged by the process of combining <br>
-          design and development to make interfaces more accessible. <br>
-          My main areas of interest include social computing,<br>
-          visual design, and UI/UX design.
+          design and development to make interfaces more intuitive. <br>
+          My main areas of interest include UI/UX and<br>
+          visual design.
         </p>
       </div>
     </div>
@@ -96,150 +97,154 @@
   <div class="skills" id="skills">
     <h1 class="header-font-bold grey-color centered">SKILLS</h1>
     <hr class="rect">
-    <div class="row">
-      <div class="col-lg-6">
-        <p class="grey-color default-font centered medium-text">DEVELOPMENT</p>
-        <div class="block">
-          <img src="img/svg/development.svg" alt="development" style="padding: 10% 10%">
-          <!-- <div class="row">
-            <div class="col-lg-4">
-              <div class="circle-skill blue-color default-font small-text">HTML</div>
-            </div>
-            <div class="col-lg-4">
-              <div class="circle-skill blue-color default-font small-text">CSS</div>
-            </div>
-            <div class="col-lg-4">
-              <div class="circle-skill blue-color default-font small-text">JS</div>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="circle-skill blue-color default-font small-text">Java</div>
-            </div>
-            <div class="col-lg-4">
-              <div class="circle-skill blue-color default-font small-text">React</div>
-            </div>
-            <div class="col-lg-4">
-              <div class="circle-skill blue-color default-font small-text">Node</div>
-            </div>
-          </div> -->
-        </div>
+    <div class="row" style="padding-top: 5%;">
+      <div class="col-lg-2">
+        <p class=" default-font skill">
+          Java
+        </p>
       </div>
-      <div class="col-lg-6">
-        <div class="block">
-          <p class="grey-color default-font centered medium-text">DESIGN</p>
-          <img src="img/svg/design.svg" alt="development" style="padding: 10% 10%">
-        </div>
-        <!-- <div class="circle-skill blue-color default-font small-text">Illustrator</div>
-        <div class="circle-skill blue-color default-font small-text">Photoshop</div>
-        <div class="circle-skill blue-color default-font small-text">After Effects</div>
-        <br>
-        <div class="circle-skill blue-color default-font small-text">Premiere Pro</div>
-        <div class="circle-skill blue-color default-font small-text">Figma</div> -->
+      <div class="col-lg-2">
+        <p class=" default-font skill">
+          HTML
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <p class=" default-font skill">
+          CSS
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <p class=" default-font skill">
+          JavaScript
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <p class=" default-font skill">
+          React.js
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <p class=" default-font skill">
+          Node.js
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center" style="padding-top: 2%;">
+      <div class="col-lg-2">
+        <p class=" default-font skill">
+          Illustrator
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <p class=" default-font skill">
+          Photoshop
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <p class=" default-font skill">
+          After Effects
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <p class=" default-font skill">
+          Premiere Pro
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <p class=" default-font skill">
+          Figma
+        </p>
       </div>
     </div>
   </div>
   
-  <div class="container-portfolio">
+  <div class="container-portfolio" id="portfolio">
     <h1 class="header-font-bold grey-color centered">PROJECTS</h1>
     <hr class="rect">
 
-    <div id="carouselExampleControls" class="carousel carousel-dark slide " data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126744619/Knights-of-the-Round-Smashgg-Page-Assets"><img class="portfolio" src="img/KRCover.png" alt="Knights of the Round Cover"></a>
-              <p class="port-text centered">Knights of the Round Smash.gg Assets</p>
+    <div class="row project-padding">
+      <div class="col-lg-3 flex-header">
+        <h1 class="grey-color header-font-bold medium-text">DESIGN</h1>
+      </div>
+      <div class="col-lg-9">
+        <div id="carousel-design" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://www.behance.net/gallery/126743313/Stream-Transitions"><img class="portfolio" 
+                src="img/thumbnails/MotionGraphicsThumbnail.png" alt="Motion Graphics Cover"></a>
+              <p class="port-text">
+                <span class="header-font grey-color small-text">Motion Graphic Transitions</span>
+                <br>
+                <span class="default-font grey-color">Click to Learn More</span>
+              </p>
             </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126741451/Combo-Bros-Smashgg-Assets"><img class="portfolio" src="img/CBCover.png" alt="Combo Bros Cover"></a>
-              <p class="port-text centered">Combo Bros 7 Smash.gg Assets</p>
+            <div class="carousel-item">
+              <a href="https://www.behance.net/gallery/126741451/Combo-Bros-Smashgg-Assets"><img class="portfolio" 
+                src="img/thumbnails/ComboBrosThumbnail.png" alt="Combo Bros Cover"></a>
+              <p class="port-text">
+                <span class="header-font grey-color small-text">Esports Tournament Infographic</span>
+                <br>
+                <span class="default-font grey-color">Click to Learn More</span>
+              </p>
             </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126741071/To-The-Top-Graphic-Assets"><img class="portfolio" src="img/TTTCover.png" alt="To The Top! Cover"></a>
-              <p class="port-text centered">To The Top! Graphic Assets</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126743313/Stream-Transitions"><img class="portfolio" src="img/VVCover.png" alt="Motion Graphics Cover"></a>
-              <p class="port-text centered">Motion Graphic Transitions</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126749665/Top-8-Banners"><img class="portfolio" src="img/T8Cover.png" alt="Top 8 Graphics Cover"></a>
-              <p class="port-text centered">Top 8 Banners</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126750153/Jamin-Valorant-Assets"><img class="portfolio" src="img/ValCover.png" alt="Jamin Valorant Cover"></a>
-              <p class="port-text centered">Jamin Youtube Assets</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126744619/Knights-of-the-Round-Smashgg-Page-Assets"><img class="portfolio" src="img/KRCover.png" alt="Knights of the Round Cover"></a>
-              <p class="port-text centered">Knights of the Round Smash.gg Assets</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126741451/Combo-Bros-Smashgg-Assets"><img class="portfolio" src="img/CBCover.png" alt="Combo Bros Cover"></a>
-              <p class="port-text centered">Combo Bros 7 Smash.gg Assets</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126741071/To-The-Top-Graphic-Assets"><img class="portfolio" src="img/TTTCover.png" alt="To The Top! Cover"></a>
-              <p class="port-text centered">To The Top! Graphic Assets</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126743313/Stream-Transitions"><img class="portfolio" src="img/VVCover.png" alt="Motion Graphics Cover"></a>
-              <p class="port-text centered">Motion Graphic Transitions</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126749665/Top-8-Banners"><img class="portfolio" src="img/T8Cover.png" alt="Top 8 Graphics Cover"></a>
-              <p class="port-text centered">Top 8 Banners</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126750153/Jamin-Valorant-Assets"><img class="portfolio" src="img/ValCover.png" alt="Jamin Valorant Cover"></a>
-              <p class="port-text centered">Jamin Youtube Assets</p>
+            <div class="carousel-item">
+              <a href="https://www.behance.net/gallery/126741071/To-The-Top-Graphic-Assets"><img class="portfolio" 
+                src="img/thumbnails/ToTheTopThumbnail.png" alt="To The Top! Cover"></a>
+              <p class="port-text">
+                <span class="header-font grey-color small-text">Tournament Series Graphics</span>
+                <br>
+                <span class="default-font grey-color">Click to Learn More</span>
+              </p>
             </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126744619/Knights-of-the-Round-Smashgg-Page-Assets"><img class="portfolio" src="img/KRCover.png" alt="Knights of the Round Cover"></a>
-              <p class="port-text centered">Knights of the Round Smash.gg Assets</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126741451/Combo-Bros-Smashgg-Assets"><img class="portfolio" src="img/CBCover.png" alt="Combo Bros Cover"></a>
-              <p class="port-text centered">Combo Bros 7 Smash.gg Assets</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126741071/To-The-Top-Graphic-Assets"><img class="portfolio" src="img/TTTCover.png" alt="To The Top! Cover"></a>
-              <p class="port-text centered">To The Top! Graphic Assets</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126743313/Stream-Transitions"><img class="portfolio" src="img/VVCover.png" alt="Motion Graphics Cover"></a>
-              <p class="port-text centered">Motion Graphic Transitions</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126749665/Top-8-Banners"><img class="portfolio" src="img/T8Cover.png" alt="Top 8 Graphics Cover"></a>
-              <p class="port-text centered">Top 8 Banners</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="https://www.behance.net/gallery/126750153/Jamin-Valorant-Assets"><img class="portfolio" src="img/ValCover.png" alt="Jamin Valorant Cover"></a>
-              <p class="port-text centered">Jamin Youtube Assets</p>
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-design" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-design" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    </div>
+
+    <div class="row project-padding">
+      <div class="col-lg-9">
+        <div id="carousel-development" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://github.com/jamin-git/react-task-tracker"><img class="portfolio" 
+                src="img/thumbnails/tasktrackerThumbnail.png" alt="Task Tracker Thumbnail"></a>
+                <p class="port-text">
+                  <span class="header-font grey-color small-text">React.js Task Tracker</span>
+                  <br>
+                  <span class="default-font grey-color">Click to Learn More</span>
+                </p>
+            </div>
+            <div class="carousel-item">
+              <a href="https://github.com/jamin-git/cs4470proj"><img class="portfolio" 
+                src="img/thumbnails/calendarThumbnail.png" alt="Combo Bros Cover"></a>
+                <p class="port-text">
+                  <span class="header-font grey-color small-text">Java Calendar GUI</span>
+                  <br>
+                  <span class="default-font grey-color">Click to Learn More</span>
+                </p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-development" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-development" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-3 flex-header">
+        <h1 class="grey-color header-font-bold medium-text">DEVELOPMENT</h1>
+      </div>
     </div>
   </div>
 

@@ -5,15 +5,6 @@ bDark: #20232a
 bMedium: #282c34
 bLight: #32363e */
 
-@font-face {
-  font-family: muli;
-  src: url("fonts/muli/muli.ttf");
-}
-@font-face {
-  font-family: muli-bold;
-  src: url("fonts/muli/muli-bold.ttf");
-}
-
 /* Hollow Shapes to use for Animation */
 .circle {
   -moz-border-radius: 100px/100px;
@@ -75,12 +66,14 @@ bLight: #32363e */
 }
 
 .header-font {
-  font-family: "muli", sans-serif;
-  font-weight: 600;
+  font-family: muli, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .header-font-bold {
-  font-family: "muli-bold", sans-serif;
-  font-weight: 600;
+  font-family: muli, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 .default-font {
   font-family: 'Poppins', sans-serif;
@@ -197,9 +190,17 @@ body {
 .centered {
   text-align: center;
 }
+
 .block {
   display: block;
   margin: auto;
+}
+.button {
+  text-decoration: none;
+  color:white;
+}
+.button:hover {
+  color:#565D68;
 }
 
 .pfp {
@@ -208,6 +209,21 @@ body {
   width: 55%;
   margin: auto;
 }
+.skill {
+  color: #565D68;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+}
+.skill:hover {
+  background-color: #61DAFB;
+  transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+}
 
 
 /* Portfolio CSS */
@@ -215,23 +231,35 @@ body {
   padding: 2% 5%;
   background-color: white;
 }
+.project-padding {
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+.flex-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .portfolio {
-  width: 500px;
-  height: 375px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 3% 3%;
+  border: 5px solid #20232a;
+  opacity: 1.0;
+  transition: opacity .55s ease-in-out;
+  -moz-transition: opacity .55s ease-in-out;
+  -webkit-transition: opacity .55s ease-in-out;
 }
 .portfolio:hover {
-  -webkit-filter: brightness(40%);
-  padding: 0;
-  border-style: solid;
-  border-color: white;
+  opacity: 0.1;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
 }
+
 .port-text {
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  font-size: 1.25rem;
-  color: white;
+  position: absolute;
+  text-align: left;
+  top: 70%;
+  left: 12%;
 }
