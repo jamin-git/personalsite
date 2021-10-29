@@ -37,7 +37,7 @@ bLight: #32363e */
 .triangle {
   fill: transparent;
   stroke: #32363e;
-  stroke-width: 30;
+  stroke-width: 20;
 }
 
 /* Home Section */
@@ -139,7 +139,10 @@ body {
   margin: auto;
 }
 .inbetween {
+  display: flex;
   padding-top: 3%;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills {
@@ -242,6 +245,8 @@ body {
 }
 .portfolio {
   display: block;
+  width: 80%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   border: 5px solid #20232a;
@@ -275,4 +280,11 @@ body {
   text-align: left;
   top: 70%;
   left: 12%;
+}
+
+.pfp-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
