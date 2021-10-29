@@ -13,10 +13,9 @@ bLight: #32363e */
   border: solid 21px#32363e;
   width: 400px;
   height: 400px;
-
   position: absolute;
   top: 10%;
-  right: -25%;
+  right: -40%;
 }
 
 .square {
@@ -26,13 +25,13 @@ bLight: #32363e */
   height: 250px;
   position: absolute;
   top: 65%;
-  left: -15%;
+  left: -35%;
 }
 
 .triangle-svg {
   position: absolute;
   top: 60%;
-  left: -25%;
+  left: -35%;
 }
 .triangle {
   fill: transparent;
@@ -121,6 +120,7 @@ body {
 
 /* Main Section CSS */
 .intro {
+  position: relative;
   padding-top: 2%;
   padding-bottom: 3%;
   padding-left: 10%;
