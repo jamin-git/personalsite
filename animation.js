@@ -52,3 +52,18 @@
     direction: "reverse",
     loop: true
   });
+
+  // Skill Cloud Animation
+
+  const myTags = [
+    'Java', 'HTML', 'CSS', 'JavaScript', 'React.js', "Node.js",
+    'Illustrator', 'Photoshop', 'Figma', 'After Effects', 'Premiere Pro'
+  ];
+  var tagCloud = TagCloud('.skill-cloud', myTags, {
+
+    radius: 350,
+
+    direction: 135,
+
+    keep: true
+  });
