@@ -56,14 +56,25 @@
   // Skill Cloud Animation
 
   const myTags = [
-    'Java', 'HTML', 'CSS', 'JavaScript', 'React.js', "Node.js",
-    'Illustrator', 'Photoshop', 'Figma', 'After Effects', 'Premiere Pro'
+    'Java', 'HTML', 'CSS', 'JavaScript', 'React.js', "Node.js"
   ];
-  var tagCloud = TagCloud('.skill-cloud', myTags, {
+  var tagCloud = TagCloud('.skill-cloud-development', myTags, {
 
     radius: 350,
 
     direction: 135,
 
-    keep: true
+    keep: false
+  });
+
+  const myTags2 = [
+    'Illustrator', 'Photoshop', 'Figma', 'After Effects', 'Premiere Pro'
+  ];
+  var tagCloud2 = TagCloud('.skill-cloud-design', myTags2, {
+
+    radius: 350,
+
+    direction: 135,
+
+    keep: false
   });
