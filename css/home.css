@@ -1,6 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+    background-color: white;
 }
 
 .c-wrapper {
@@ -55,3 +56,8 @@ body {
   .small-text {
     font-size: 1.6rem;
   }
+
+  .gray {
+    background-color: rgb(240, 240, 240);
+  }
+  
