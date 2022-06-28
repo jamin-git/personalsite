@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background-color: white;
+}
+
+.c-wrapper {
+    position: absolute;
+    z-index: 0;
+}
+
+.info-front {
+    position: absolute;
+    z-index: 1;
+}
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mulit-font-bold {
+    font-family: muli, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .muli-font {
+    font-family: muli, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  /* Text Colors + Size */
+.blue-color {
+    color: #61DAFB;
+  }
+  .white-color {
+    color: white;
+  }
+  .grey-color {
+    color: #565D68;
+  }
+  .black-color {
+    color: black;
+  }
+
+  .large-text {
+    font-size: 4rem;
+  }
+  .medium-text {
+    font-size: 3rem;
+  }
+  .small-text {
+    font-size: 1.6rem;
+  }
+
+  .gray {
+    background-color: rgb(240, 240, 240);
+  }
+  

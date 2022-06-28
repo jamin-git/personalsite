@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-
   <title>Jacob Amin</title>
 
   <!-- Fonts -->
@@ -12,257 +11,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&family=Russo+One&family=Source+Code+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/ysk6kad.css">
 
-  <!-- Bootstrap & Stylesheets -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-  <!-- JQuery Initialization -->
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-  <!-- Anime.js Initialization -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
-  <!-- TagCloud Initialization -->
-  <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favi.ico" type="image/x-icon">
-
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 
 <body>
-  <div class="home flex">
-    <div id="intro-square" class="square"></div>
-    <div id="intro-circle" class="circle"></div>
-    <svg id="intro-triangle" class="triangle-svg" width="500" height="500" viewBox="-50 -50 300 300">
-      <polygon class="triangle" stroke-linejoin="round" points="100,0 0,200 200,200"/>
-    </svg>
-    <div class="flex" style="z-index: 1;">
-      <p class="white-color header-font medium-text centered" style="padding-bottom: 1%;">
-        <span class="header-font-bold">Hey! I'm <span class="blue-color">Jacob Amin</span></span>
-        <br>
-        I do <span class="grey-color coding-font">&lt;<span id ="developer-heading"></span>/&gt;</span> & <span class="grey-color design-font">design</span>
-      </p>
-      <button type="button" class="btn btn-outline-light default-font small-text"><a class="button" href="#intro">View More! &nbsp<i class="fas fa-angle-down"></i></a></button>
-    </div>
-  </div>
-  
-
-  <div id="intro" class="intro flex">
-    <h1 class="header-font-bold grey-color centered">ABOUT</h1>
-    <hr class="rect">
-    <div class="row">
-      <div class="col-lg-4 pfp-box">
-        <img src="img/jaminpfp.png" alt="pfp" class="pfp centered">
-        <p class="centered default-font grey-color">
-          <br>This is me!
-        </p>
-      </div>
-      <div class="col-lg-8 inbetween">
-        <p class="centered default-font grey-color small-text">
-          I am currently a student at Georgia Tech studying 
-          Computational Media. I am intrigued by the process of combining 
-          design and development to make interfaces more intuitive. 
-          My main areas of interest include UI/UX and
-          visual design.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="skills" id="skills">
-
-    <h1 class="header-font-bold grey-color centered">SKILLS</h1>
-    <hr class="rect">
-    <div class="row" style="padding-top: 5%;">
-      <div class="col-lg-6">
-        <span class='skill-cloud-development'></span>
-      </div>
-      <div class="col-lg-6">
-        <span class='skill-cloud-design'></span>
-      </div>
-    </div>
-  </div>
-  
-  <div class="container-portfolio" id="portfolio">
-    <h1 class="header-font-bold grey-color centered">PROJECTS</h1>
-    <hr class="rect">
-
-    <div class="row project-padding">
-      <div class="col-lg-3 flex-header">
-        <h1 class="grey-color header-font-bold" style="font-size: 2.5rem;">DESIGN</h1>
-      </div>
-      <div class="col-lg-9">
-        <div id="carousel-design" class="carousel carousel-dark slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item">
-              <div class="port-item">
-                <a href="https://www.behance.net/gallery/126743313/Stream-Transitions"><img class="portfolio" 
-                  src="img/thumbnails/MotionGraphicsThumbnail.png" alt="Motion Graphics Cover"></a>
-              </div>
-              <div class="port-title">
-                <p class="port-text">
-                  <span class="header-font grey-color small-text">Motion Design - Motion Graphic Transitions</span>
-                  <br>
-                  <span class="default-font grey-color">Click to Learn More</span>
-                </p>
-              </div>
+    <div class="container-fluid info-front">
+        <div class="row align-items-center" style="min-height: 100vh">
+            <div class="col-7">
+                <div class="centered-div" style="padding-bottom: 3%">
+                    <p class="white-color header-font medium-text">
+                        <span class="header-font-bold">Hey! I'm <span class="blue-color">Jacob Amin</span>,</span>
+                        <br>
+                        <span>&nbsp; &nbsp; &nbsp; welcome to my site!</span>
+                      </p>
+                </div>
+                <div class="row centered-div">
+                    <div class="col-2 centered-div">
+                        <a href="esports.html"><button type="button" class="btn btn-outline-light small-text">Esports</button></a>
+                    </div>
+                    <div class="col-2 centered-div">
+                        <a href="dev.html"><button type="button" class="btn btn-outline-light small-text">Development</button></a>
+                    </div>
+                </div>
             </div>
-            <!-- <div class="carousel-item">
-              <div class="port-item">
-                <a href="https://www.behance.net/gallery/126741451/Combo-Bros-Smashgg-Assets"><img class="portfolio" 
-                  src="img/thumbnails/ComboBrosThumbnail.png" alt="Combo Bros Cover"></a>
-              </div>
-              <div class="port-title">
-                <p class="port-text">
-                  <span class="header-font grey-color small-text">Esports Tournament Infographic</span>
-                  <br>
-                  <span class="default-font grey-color">Click to Learn More</span>
-                </p>
-              </div>
-            </div> -->
-            <!-- <div class="carousel-item">
-              <div class="port-item">
-                <a href="https://www.behance.net/gallery/126741071/To-The-Top-Graphic-Assets"><img class="portfolio" 
-                  src="img/thumbnails/ToTheTopThumbnail.png" alt="To The Top! Cover"></a>
-              </div>
-              <div class="port-title">
-                <p class="port-text">
-                  <span class="header-font grey-color small-text">Visual Design - Tournament Series Graphics</span>
-                  <br>
-                  <span class="default-font grey-color">Click to Learn More</span>
-                </p>
-              </div>
-            </div> -->
-
-            <div class="carousel-item active">
-              <div class="port-item">
-                <a href="https://www.behance.net/gallery/133575551/Break-the-Byte-Branding-Guide"><img class="portfolio" 
-                  src="img/thumbnails/byteThumbnail.png" alt="To The Top! Cover"></a>
-              </div>
-              <div class="port-title">
-                <p class="port-text">
-                  <span class="header-font grey-color small-text">Visual Design - Break The Byte Brand Guide</span>
-                  <br>
-                  <span class="default-font grey-color">Click to Learn More</span>
-                </p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="port-item">
-                <a href="https://www.behance.net/gallery/137417501/Menu-Design-%28UIUX%29"><img class="portfolio" 
-                  src="img/thumbnails/Eco-EatersThumbnail.png" alt="Menu Redesign Cover"></a>
-              </div>
-              <div class="port-title">
-                <p class="port-text">
-                  <span class="header-font grey-color small-text">UI/UX - Waste Conscious Restaurant Menu</span>
-                  <br>
-                  <span class="default-font grey-color">Click to Learn More</span>
-                </p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="port-item">
-                <a href="https://www.behance.net/gallery/137501783/Woodruff-Park-Redesign"><img class="portfolio" 
-                  src="img/thumbnails/DesignBlocThumbnail.png" alt="DesignBloc Cover"></a>
-              </div>
-              <div class="port-title">
-                <p class="port-text">
-                  <span class="header-font grey-color small-text">Design - Woodruff Park</span>
-                  <br>
-                  <span class="default-font grey-color">Click to Learn More</span>
-                </p>
-              </div>
-            </div>
-
-
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-design" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel-design" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-      </div>
     </div>
-
-    <div class="row project-padding">
-      <div class="col-lg-9">
-        <div id="carousel-development" class="carousel carousel-dark slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="port-item">
-                <a href="https://github.com/jamin-git/react-task-tracker"><img class="portfolio" 
-                  src="img/thumbnails/tasktrackerThumbnail.png" alt="Task Tracker Thumbnail"></a>
+    <div class="c-wrapper">
+        <div class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="7000">
+                <img src="img/homeScreen/i1.png" class="d-block w-100">
               </div>
-              <div class="port-title">
-                <p class="port-text">
-                  <span class="header-font grey-color small-text">React.js Task Tracker</span>
-                  <br>
-                  <span class="default-font grey-color">Click to Learn More</span>
-                </p>
+              <div class="carousel-item" data-bs-interval="7000">
+                <img src="img/homeScreen/i2.png" class="d-block w-100">
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="port-item">
-                <a href="https://github.com/jamin-git/cs4470proj"><img class="portfolio" 
-                  src="img/thumbnails/calendarThumbnail.png" alt="Combo Bros Cover"></a>
+              <div class="carousel-item" data-bs-interval="7000">
+                <img src="img/homeScreen/i3.png" class="d-block w-100">
               </div>
-              <div class="port-title">
-                <p class="port-text">
-                  <span class="header-font grey-color small-text">Java Calendar GUI</span>
-                  <br>
-                  <span class="default-font grey-color">Click to Learn More</span>
-                </p>
+              <div class="carousel-item" data-bs-interval="7000">
+                <img src="img/homeScreen/i4.png" class="d-block w-100">
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-development" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel-development" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <div class="col-lg-3 flex-header">
-        <h1 class="grey-color header-font-bold" style="font-size: 2.5rem;">DEVELOPMENT</h1>
-      </div>
     </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-  
-  <!-- Typed.js Script -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <!-- Animations Script -->
-  <script src="animation.js"></script>
 </body>
-
-<footer>
-  <div class="contact" id="contact">
-    <h1 class="header-font white-color centered">CONTACT</h1>
-    <hr class="rect-blue">
-    <div class="container-socials">
-      <a href="https://www.linkedin.com/in/jacobsamin/"><button type="button" class="btn btn-link"><i class="fab fa-linkedin fa-2x"></i></button></a>
-      <a href="mailto: jamin7@gatech.edu"><button type="button" class="btn btn-link"><i class="fas fa-envelope fa-2x"></i></button></a>
-      <a href="https://github.com/jamin-git"><button type="button" class="btn btn-link"><i class="fab fa-github fa-2x"></i></button></a>
-    </div>
-    <p class="default-font white-color centered"><span class="blue-color">Jacob Amin</span> ©2021</p>
-  </div>
-</footer>
 
 </html>
