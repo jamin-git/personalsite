@@ -1,17 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
-    background-color: #282c34;
-}
-
-.c-wrapper {
-    position: absolute;
-    z-index: 0;
-}
-
-.info-front {
-    position: absolute;
-    z-index: 1;
+    background-color: white;
 }
 
 .centered-div {
@@ -20,7 +9,7 @@ body {
     align-items: center;
 }
 
-.mulit-font-bold {
+.muli-font-bold {
     font-family: muli, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -55,4 +44,43 @@ body {
   }
   .small-text {
     font-size: 1.6rem;
+  }
+
+  /* Headings */
+
+  .main-header {
+    padding: 2% 0% 2% 2%;
+  }
+  .second-header {
+    padding: 2% 0% 2% 3%;
+  }
+
+  .container-1 {
+    background-color: #f1f0f0;
+    padding-bottom: 2%;
+  }
+  .container-2 {
+    background-color: #f9f9fa;
+    padding-bottom: 2%;
+  }
+
+  .icon-social {
+    height: 25%;
+    width: 25%;
+    opacity: .6;
+  }
+  .icon-text {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #565D68;
+  }
+  .icon-ul {
+    padding-left: 25%;
+    list-style-type: none;
+  }
+
+  .side-nav {
+    z-index: 2;
+    position: fixed;
+    right: 0;
   }
