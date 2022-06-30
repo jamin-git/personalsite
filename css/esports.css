@@ -1,6 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
+    overflow-x: hidden;
 }
 
 .centered-div {
@@ -63,6 +64,9 @@ body {
     background-color: #f9f9fa;
     padding-bottom: 2%;
   }
+  .container-3 {
+    background-color: #f1f0f0;
+  }
 
   .icon-social {
     height: 25%;
@@ -75,12 +79,24 @@ body {
     color: #565D68;
   }
   .icon-ul {
-    padding-left: 25%;
     list-style-type: none;
   }
 
   .side-nav {
     z-index: 2;
     position: fixed;
-    right: 0;
+    right: 2%;
+    top: 2%;
+  }
+  .nav-text {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #565D68;
+    opacity: .7;
+  }
+  .nav-text:hover {
+    opacity: 1;
+  }
+  .dot {
+    list-style-type: disc;
   }
