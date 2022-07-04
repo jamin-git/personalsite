@@ -11,7 +11,7 @@ var peakNav = document.getElementById('peakNav');
 var gsuNav = document.getElementById('gsuNav');
 var miscNav = document.getElementById('miscNav');
 
-window.addEventListener('scroll', function(event) {
+window.addEventListener('scroll', function (event) {
 
     scrollPos = this.scrollY;
 
