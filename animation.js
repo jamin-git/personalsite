@@ -11,7 +11,7 @@
 
 
   // Shape Animations
-  
+
   var introSquare = document.querySelector("#intro-square");
   var introSquareAnimation = anime({
     targets: introSquare,
