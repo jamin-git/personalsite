@@ -86,8 +86,7 @@ body {
 
 .container-0 {
   background-color: #282c34;
-  padding-bottom: 1%;
-  padding-top: 1%;
+  padding-top: 0.5%;
 }
 
 .container-1 {
@@ -160,7 +159,7 @@ body {
   opacity: 0.8;
 }
 .overlay-li {
-  padding-bottom: 1%;
+  /* padding-bottom: 1%; */
 }
 
 
@@ -184,7 +183,10 @@ body {
 
 .socials {
   text-align: center;
-  padding-top: 1%;
+}
+.socials-button {
+  padding-left: 1%;
+  padding-right: 1%;
 }
 .icon-social {
   height: 3%;
@@ -205,4 +207,11 @@ body {
 }
 .icon-social-slide:hover{
   opacity: .9;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text-overlay {padding-top: 2%;}       
+}
+@media only screen and (max-width: 600px) {
+  .text-overlay {padding-top: 3%;}       
 }
