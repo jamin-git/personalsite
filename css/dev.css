@@ -314,3 +314,9 @@ body {
   color: #61DAFB;
 
 }
+
+.centered-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
