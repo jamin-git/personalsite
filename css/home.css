@@ -7,6 +7,12 @@
   .desktop {display: none;}
 }
 
+.change {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
