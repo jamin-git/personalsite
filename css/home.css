@@ -72,6 +72,16 @@ body {
     font-size: 1.6vw;
   }
 
+  .large-text-mobile {
+    font-size: 4vw;
+  }
+  .medium-text-mobile {
+    font-size: 4vw;
+  }
+  .small-text-mobile {
+    font-size: 2.6vw;
+  }
+
   .gray {
     background-color: rgb(240, 240, 240);
   }
