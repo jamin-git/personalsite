@@ -5,6 +5,16 @@ bDark: #20232a
 bMedium: #282c34
 bLight: #32363e */
 
+
+
+
+body {
+  background-color: #282c34;
+  overflow-x: hidden !important;
+  width: auto !important;
+}
+
+
 /* Hollow Shapes to use for Animation */
 .circle {
   -moz-border-radius: 100px/100px;
@@ -102,16 +112,6 @@ bLight: #32363e */
 
 
 
-
-
-
-
-
-
-body {
-  background-color: #282c34;
-  overflow-x: hidden;
-}
 
 
 .container-navbar-inner {
