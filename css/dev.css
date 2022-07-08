@@ -242,6 +242,8 @@ body {
 .container-portfolio {
   padding: 2% 5%;
   background-color: white;
+  position: relative;
+  z-index: 2;
 }
 .project-padding {
   padding-top: 4%;
