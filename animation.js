@@ -1,4 +1,4 @@
-  // Typed Animations
+  // // Typed Animations
 
   var developerString = document.querySelector("#developer-heading");
   var options = {
@@ -10,48 +10,48 @@
   var typed = new Typed(developerString, options);
 
 
-  // Shape Animations
+  // // Shape Animations
 
-  var introSquare = document.querySelector("#intro-square");
-  var introSquareAnimation = anime({
-    targets: introSquare,
-    left: '2000px',
-    width: '300px',
-    height: '300px',
-    rotate: 180,
-    easing: "linear",
-    duration: 10000,
-    delay: 500,
-    loop: true
-  });
+  // var introSquare = document.querySelector("#intro-square");
+  // var introSquareAnimation = anime({
+  //   targets: introSquare,
+  //   left: '2000px',
+  //   width: '300px',
+  //   height: '300px',
+  //   rotate: 180,
+  //   easing: "linear",
+  //   duration: 10000,
+  //   delay: 500,
+  //   loop: true
+  // });
 
-  var introCircle = document.querySelector("#intro-circle");
-  var introCircleAnimation = anime({
-    targets: introCircle,
-    right: '2000px',
-    top: "-150px",
-    width: "300px",
-    height: "300px",
-    easing: "linear",
-    duration: 12000,
-    delay: 1000,
-    loop: true
-  });
+  // var introCircle = document.querySelector("#intro-circle");
+  // var introCircleAnimation = anime({
+  //   targets: introCircle,
+  //   right: '2000px',
+  //   top: "-150px",
+  //   width: "300px",
+  //   height: "300px",
+  //   easing: "linear",
+  //   duration: 12000,
+  //   delay: 1000,
+  //   loop: true
+  // });
 
-  var introTriangle = document.querySelector("#intro-triangle");
-  var introTriangleAnimation = anime({
-    targets: introTriangle,
-    left: '1500px',
-    top: '-500px',
-    width: '300px',
-    height: '300px',
-    rotate: 180,
-    easing: "linear",
-    duration: 10000,
-    delay: 1500,
-    direction: "reverse",
-    loop: true
-  });
+  // var introTriangle = document.querySelector("#intro-triangle");
+  // var introTriangleAnimation = anime({
+  //   targets: introTriangle,
+  //   left: '1500px',
+  //   top: '-500px',
+  //   width: '300px',
+  //   height: '300px',
+  //   rotate: 180,
+  //   easing: "linear",
+  //   duration: 10000,
+  //   delay: 1500,
+  //   direction: "reverse",
+  //   loop: true
+  // });
 
   // Skill Cloud Animation
 
@@ -73,6 +73,19 @@
   var tagCloud2 = TagCloud('.skill-cloud-design', myTags2, {
 
     radius: 350,
+
+    direction: 135,
+
+    keep: false
+  });
+
+  const myTags3 = [
+    '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.',
+     '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.',
+  ];
+  var tagCloud2 = TagCloud('.skill-cloud-bg', myTags3, {
+
+    radius: 1200,
 
     direction: 135,
 
