@@ -91,6 +91,18 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+
+.muli-font-bold {
+  font-family: Muli, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.muli-font {
+  font-family: Muli, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .default-font {
   font-family: 'Poppins', sans-serif;
 }
@@ -240,7 +252,6 @@ body {
 
 /* Portfolio CSS */
 .container-portfolio {
-  padding: 2% 5%;
   background-color: white;
   position: relative;
   z-index: 2;
@@ -345,4 +356,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Brightness-zoom Container */
+.img-hover-zoom--brightness div {
+  transition: transform .2s, filter .2s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(95%);
+}
+
+/* The Transformation */
+.img-hover-zoom--brightness:hover div {
+  filter: brightness(100%);
+  transform: scale(1.01);
+}
+
+
+/* changing spotlight css */
+
+#spotlight .contain {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+#spotlight .autofit {
+  object-fit: none;
+  width: auto;
+  height: auto;
+  max-height: none;
+  max-width: none;
+  transition: none;
 }
