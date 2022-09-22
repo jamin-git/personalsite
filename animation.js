@@ -2,7 +2,7 @@
 
   var developerString = document.querySelector("#developer-heading");
   var options = {
-    strings: ['development^5000'],
+    strings: ['Web Dev^3000', 'UX Research^3000', 'Web Design^3000'],
     typeSpeed: 200,
     backSpeed: 200,
     loop: true
@@ -90,6 +90,18 @@
     radius: 1200,
 
     direction: 340,
+
+    keep: false
+  });
+
+  const myTags4 = [
+    'Illustrator', 'Photoshop', 'Figma', 'After Effects', 'Premiere Pro', 'Java', 'HTML', 'CSS', 'JavaScript', 'React.js', "Node.js"
+  ];
+  var tagCloud2 = TagCloud('.skill-cloud-main', myTags4, {
+
+    radius: 500,
+
+    direction: 600,
 
     keep: false
   });
