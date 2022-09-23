@@ -15,7 +15,7 @@ function showECO() {
         {src: "img/porfolio/full/ecoFull.png"}
     ]
     Spotlight.show(imgs, {
-        title: "Restaurt Menu Redesign - User Interface Design - Georgia Tech - Summer 2021",
+        title: "Restaurant Menu Redesign - User Interface Design - Georgia Tech - Summer 2021",
         description: "Semester long project @ Georgia Tech",
         fit: "contain"
     })
@@ -23,34 +23,85 @@ function showECO() {
 
 
 function showWBD2() {
-    Fancybox.defaults.Image = { fit: "contain-w", }
+    Fancybox.Plugins.Toolbar.defaults.items.plan = {
+        type: "div",
+        label: "Study Plan",
+        html: "<a href=https://drive.google.com/file/d/1FG14rdDOmmH-l1Rtz8BiUkIzGW1Tf_WR/view?usp=sharing target=_blank class=small-text>Study Plan</a>",
+    }
     Fancybox.show([
         {
             src: "img/porfolio/full/wbdFull.png",
             type: "image",
+        }
+    ], {
+        Toolbar: {
+            display: [
+              { id: "prev", position: "center" },
+              { id: "counter", position: "center" },
+              { id: "next", position: "center" },
+              { id: "plan", position: "center" },
+              "zoom",
+              "slideshow",
+              "fullscreen",
+              "thumbs",
+              "close",]},
+        click: null,
+        dragToClose: false,
+        groupAttr : true,
+        on: {
+          "done": (fancybox, slide) => {
+            const panzoom = slide.Panzoom;
+            if (panzoom) {
+              panzoom.panTo({
+                x: -panzoom.viewport.width * 3.5,
+                y: 0,
+                scale: 8,
+              });
+            }
+          },
         },
-    ]);
+      });
 }
 
 function showECO2() {
-    Fancybox.defaults.Image = { fit: "contain-w", }
     Fancybox.show([
         {
             src: "img/porfolio/full/ecoFull.png",
             type: "image",
+        }
+    ], {
+        click: null,
+        dragToClose: false,
+        groupAttr : true,
+        on: {
+          "done": (fancybox, slide) => {
+            const panzoom = slide.Panzoom;
+            if (panzoom) {
+              panzoom.panTo({
+                x: -panzoom.viewport.width * 7,
+                y: 0,
+                scale: 16,
+              });
+            }
+          },
         },
-    ]);
+      });
 }
 
-function showWBD3() {
-    var img1 = document.createElement("img");
-    img1.src = "img/porfolio/full/wbdFull.png";
-    const viewer = new Viewer(img1, [{
 
-    }]);
-    viewer.show();
+
+function showEAI() {
+    window.open("https://docs.google.com/document/d/1_VjHZZnm6Budvnn4UWvI4mBruAUtTq70v8sDznw45JM/edit?usp=sharing");
 }
-
-function showECO3() {
-
+function showCI() {
+    window.open("https://github.com/jamin-git/clutch-it");
+}
+function showAA() {
+    window.open("https://github.com/jamin-git/action-assembly");
+}
+function showRTT() {
+    window.open("https://github.com/jamin-git/react-task-tracker");
+}
+function showRE() {
+    window.open("https://github.com/jamin-git/ReImagine-Georgia-Tech");
 }

@@ -44,8 +44,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 
   <!-- viewer.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js" integrity="sha512-i5q29evO2Z4FHGCO+d5VLrwgre/l+vaud5qsVqQbPXvHmD9obORDrPIGFpP2+ep+HY+z41kAmVFRHqQAjSROmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.css" integrity="sha512-3NbO5DhK9LuM6wu+IZvV5AYXxqSmj/lfLLmHMV9t18ij+MfmhhxeYEunHllEu+TFJ4tJM5D0DhazM2EGGGvNmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
+    integrity="sha512-i5q29evO2Z4FHGCO+d5VLrwgre/l+vaud5qsVqQbPXvHmD9obORDrPIGFpP2+ep+HY+z41kAmVFRHqQAjSROmA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.css"
+    integrity="sha512-3NbO5DhK9LuM6wu+IZvV5AYXxqSmj/lfLLmHMV9t18ij+MfmhhxeYEunHllEu+TFJ4tJM5D0DhazM2EGGGvNmQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -58,97 +62,174 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav" style="padding-left: 1%">
-        <a class="nav-item nav-link" href="#intro">About</a>
-        <a class="nav-item nav-link" href="#skills">Skills</a>
-        <a class="nav-item nav-link" href="#projects">Projects</a>
+        <a class="nav-item nav-link" href="#research-projects">Research</a>
+        <a class="nav-item nav-link" href="#web-projects">Web Development</a>
       </div>
     </div>
   </nav>
 
-  
-  <!-- <div class="home flex">
-    <div class="home-cloud-div">
-      <span class='home-cloud-bg'></span>
-    </div>
-    <div class="flex" style="z-index: 2">
-      <p class="white-color header-font medium-text centered" style="padding-bottom: 1%;">
-        <span class="header-font-bold">Hey! I'm <span class="blue-color">Jacob Amin</span></span>
-        <br>
-        I do <span class="grey-color coding-font">&lt;<span id="developer-heading"></span>/&gt;</span> & <span
-          class="grey-color design-font">design</span>
-      </p>
-      <button type="button" class="btn btn-outline-light default-font small-text"><a class="button" href="#intro">View
-          More! &nbsp<i class="fas fa-angle-down"></i></a></button>
-    </div>
-  </div> -->
-
-  <div class="home">
-    <div class="row">
-      <div class="col-6">
+  <div class="container-fluid" style="min-height: 100vh; min-width: 100vw;">
+    <div class="row align-items-center wrapper-front" style="min-height: 100vh; min-width: 100vw;">
+      <div class="col-7">
         <div class="centered-div">
-          <p class="white-color header-font medium-text">
-            <span class="header-font-bold">Hey! I'm <span class="blue-color">Jacob Amin</span>,</span>
-            <br>
-            <span>&nbsp; &nbsp; &nbsp; I do <span class="grey-color header-font">&lt;<span id="developer-heading"></span>/&gt;</span> </span>
+          <p class="black-color muli-font-bold large-text">
+            Hey! I'm <span class="blue-color">Jacob Amin</span>,
+          </p>
+        </div>
+        <div class="centered-div" style="padding-bottom: 10%;">
+          <p class="black-color muli-font-bold large-text">
+            I do <span id="typed-heading"></span>
           </p>
         </div>
       </div>
-      <div class="col-6">
-        <div class="home-cloud-div">
-          <span class='skill-cloud-main'></span>
+    </div>
+    <div class="skill-cloud-main wrapper-c"></div>
+  </div>
+
+
+
+
+
+
+  <div class="container-portfolio" id="research-projects">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-8 main-header">
+          <h1 class="muli-font-bold large-text">Research Projects</h1>
+          <h3 class="muli-font">2020-Present</h3>
+        </div>
+      </div>
+      <div class="img-hover-zoom--brightness container-1" width="100%" height="auto" onclick="showWBD2()">
+        <div class="row portfolio-item align-items-center">
+          <div class="col-7">
+            <div style="text-align: center;">
+              <div style="display: inline-block; text-align: left;">
+                <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">UX Research</h1>
+                <h3 class="muli-font-bold">Search Engine Optimization</h3>
+                <h3 class="muli-font">Warner Brothers Discovery - Summer 2022</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 align-middle">
+            <img class="portfolio-image img-fluid" src="/img/porfolio/logo/WBDL.png">
+          </div>
+        </div>
+        <!-- <div>
+          <img src="/img/porfolio/thumb/WBD.png" class="portfolio-image">
+        </div> -->
+      </div>
+      <div class="img-hover-zoom--brightness container-2" width="100%" height="auto" onclick="showECO2()">
+        <div class="row portfolio-item align-items-center">
+          <div class="col-5 align-middle" style="text-align: right;">
+            <img class="portfolio-image img-fluid" src="/img/porfolio/logo/ECOL.png">
+          </div>
+          <div class="col-7">
+            <div style="text-align: center;">
+              <div style="display: inline-block; text-align: left;">
+                <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">UX Research</h1>
+                <h3 class="muli-font-bold">Restaurant Menu Design</h3>
+                <h3 class="muli-font">User Interface Design - Georgia Tech - Summer 2021</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="img-hover-zoom--brightness container-1" width="100%" height="auto" onclick="showEAI()">
+        <div class="row portfolio-item align-items-center">
+          <div class="col-7">
+            <div style="text-align: center;">
+              <div style="display: inline-block; text-align: left;">
+                <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">Academic Research</h1>
+                <h3 class="muli-font-bold">Emotion Artificial Intelligence</h3>
+                <h3 class="muli-font">Georgia Tech - Spring 2022 to Present</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 align-middle">
+            <img class="portfolio-image img-fluid" src="/img/porfolio/logo/EAIL.png">
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  
-  <!-- Old Intro -->
-  <!-- <div id="intro" class="intro flex">
-    <h1 class="header-font-bold grey-color centered">ABOUT</h1>
-    <hr class="rect">
-    <div class="row">
-      <div class="col-lg-4 pfp-box">
-        <img src="img/jaminpfp.png" alt="pfp" class="pfp centered">
-        <p class="centered default-font grey-color">
-          <br>This is me!
-        </p>
+  <div class="container-portfolio" id="web-projects">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-8 main-header">
+          <h1 class="muli-font-bold large-text">Web Development Projects</h1>
+          <h3 class="muli-font">2019-Present</h3>
+        </div>
       </div>
-      <div class="col-lg-8 inbetween">
-        <p class="centered default-font grey-color small-text">
-          I am currently a student at Georgia Tech studying
-          Computational Media. I am intrigued by the process of combining
-          design and development to make interfaces more intuitive.
-          My main areas of interest include UI/UX and
-          visual design.
-        </p>
-      </div>
-    </div>
-  </div> -->
 
-  <div class="skills" id="skills">
+      <div class="img-hover-zoom--brightness container-1" width="100%" height="auto" onclick="showRE()">
+        <div class="row portfolio-item align-items-center">
+          <div class="col-5 align-middle" style="text-align: right;">
+            <img class="portfolio-image img-fluid" src="/img/porfolio/logo/REL.png">
+          </div>
+          <div class="col-7">
+            <div style="text-align: center;">
+              <div style="display: inline-block; text-align: left;">
+                <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">Re-Imagine Georgia Tech</h1>
+                <h3 class="muli-font-bold">3D/VR Web Development</h3>
+                <h3 class="muli-font">Graphic & Visual Design - Georgia Tech - Spring 2022</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <h1 class="header-font-bold grey-color centered">SKILLS</h1>
-    <hr class="rect">
-    <div class="row" style="padding-top: 5%;">
-      <div class="col-lg-6">
-        <span class='skill-cloud-development'></span>
+      <div class="img-hover-zoom--brightness container-1" width="100%" height="auto" onclick="showCI()">
+        <div class="row portfolio-item align-items-center">
+          <div class="col-7">
+            <div style="text-align: center;">
+              <div style="display: inline-block; text-align: left;">
+                <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">Clutch.It</h1>
+                <h3 class="muli-font-bold">Project Manager - Web Development Club</h3>
+                <h3 class="muli-font">Georgia Tech - Spring 2022</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 align-middle">
+            <img class="portfolio-image img-fluid" src="/img/porfolio/logo/CLUTCHL.png">
+          </div>
+        </div>
       </div>
-      <div class="col-lg-6">
-        <span class='skill-cloud-design'></span>
-      </div>
-    </div>
-  </div>
 
-  <div class="container-portfolio" id="projects">
-    <div class="img-hover-zoom--brightness" width="100%" height="auto" onclick="showWBD()">
-      <div>
-        <img src="/img/porfolio/thumb/WBD.png" class="">
+      <div class="img-hover-zoom--brightness container-2" width="100%" height="auto" onclick="showAA()">
+        <div class="row portfolio-item align-items-center">
+          <div class="col-5 align-middle" style="text-align: right;">
+            <img class="portfolio-image img-fluid" src="/img/porfolio/logo/ACTIONL.png">
+          </div>
+          <div class="col-7">
+            <div style="text-align: center;">
+              <div style="display: inline-block; text-align: left;">
+                <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">Action Assembly</h1>
+                <h3 class="muli-font-bold">Developer - Web Development Club</h3>
+                <h3 class="muli-font">Georgia Tech - Fall 2021</h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="img-hover-zoom--brightness" width="100%" height="auto" onclick="showECO()">
-      <div>
-        <img src="/img/porfolio/thumb/eco.png">
+      
+      <div class="img-hover-zoom--brightness container-1" width="100%" height="auto" onclick="showRTT()">
+        <div class="row portfolio-item align-items-center">
+          <div class="col-7">
+            <div style="text-align: center;">
+              <div style="display: inline-block; text-align: left;">
+                <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">React-Task-Tracker</h1>
+                <h3 class="muli-font-bold">Independent Project</h3>
+                <h3 class="muli-font">Fall 2021</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 align-middle">
+            <img class="portfolio-image img-fluid" src="/img/porfolio/logo/TASKL.png">
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
@@ -168,8 +249,8 @@
   <script src="click.js"></script>
 </body>
 
-<footer id="footer">
-  <div class="centered-div container-0" style="padding-top: 2%; position: relative; z-index: 2;">
+<footer>
+  <div class="centered-div container-0" style="padding-top: 3%;">
     <a href="https://www.linkedin.com/in/jacobsamin/" style="padding-left: .3%; padding-right: .3%;"><button
         type="button" class="btn btn-link" style="color: #f9f9fa;"><i class="fab fa-linkedin fa-2x"></i></button></a>
     <a href="mailto: jamin7@gatech.edu" style="padding-left: .3%; padding-right: .3%;"><button type="button"
@@ -182,7 +263,7 @@
       style="padding-left: .3%; padding-right: .3%;"><button type="button" class="btn btn-link"
         style="color: #f9f9fa;"><i class="fa-solid fa-file-lines fa-2x"></i></button></a>
   </div>
-  <div class="centered-div container-0" style="padding-top: 1%; padding-bottom: 1%;">
+  <div class="centered-div container-0" style="padding-top: 0.5%; padding-bottom: 1%;">
     <p class="default-font white-color centered"><span class="blue-color">Jacob Amin</span> ©2022</p>
   </div>
 </footer>
