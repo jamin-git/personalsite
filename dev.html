@@ -27,7 +27,7 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
   <!-- Anime.js Initialization -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
   <!-- TagCloud Initialization -->
   <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
@@ -62,31 +62,92 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav" style="padding-left: 1%">
+        <a class="nav-item nav-link" href="#about">About</a>
         <a class="nav-item nav-link" href="#research-projects">Research</a>
         <a class="nav-item nav-link" href="#web-projects">Web Development</a>
       </div>
     </div>
   </nav>
 
-  <div class="container-fluid" style="min-height: 100vh; min-width: 100vw;">
+  <div class="container-fluid gradient" style="min-height: 100vh; min-width: 100vw;">
     <div class="row align-items-center wrapper-front" style="min-height: 100vh; min-width: 100vw;">
-      <div class="col-7">
+      <div class="col" style="padding-bottom: 8%">
         <div class="centered-div">
           <p class="black-color muli-font-bold large-text">
             Hey! I'm <span class="blue-color">Jacob Amin</span>,
           </p>
         </div>
-        <div class="centered-div" style="padding-bottom: 10%;">
+        <div class="centered-div" style="padding-bottom: 5%;">
           <p class="black-color muli-font-bold large-text">
             I do <span id="typed-heading"></span>
           </p>
         </div>
+        <div class="centered-div">
+          <a href="#about">
+            <svg class="arrows">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+              <path class="a2" d="M0 20 L30 52 L60 20"></path>
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
     </div>
-    <div class="skill-cloud-main wrapper-c"></div>
   </div>
 
-
+  <div id="about">
+    <div class="container-fluid">
+      <div class="row container-2">
+        <div class="col-8 main-header">
+          <h1 class="muli-font-bold large-text" style="padding-left: 2%;">About</h1>
+        </div>
+      </div>
+      <div class="row container-1">
+        <div class="col-7 main-header" style="padding-top: 5%; padding-bottom: 5%">
+          <p class="small-text" style="padding-left: 2%"> &nbsp; &nbsp; &nbsp; &nbsp;I am a 4th-year student at Georgia
+            Tech studying Computational Media.
+            I am fascinated by learning how humans interact and perceive the day-to-day technologies around them. I have
+            interests in User Experience Research and Web Development / Design. Want to know more about my work? Check
+            out the projects below!
+          </p>
+        </div>
+        <div class="col-5" style="padding-top: 5%; padding-bottom: 5%">
+          <div class="row">
+            <h1 class="ml4">
+              <span class="letters letters-1">Figma</span>
+              <span class="letters letters-2">Illustrator</span>
+              <span class="letters letters-3">Premiere</span>
+              <span class="letters letters-4">After Effects</span>
+              <span class="letters letters-5">Photoshop</span>
+            </h1>
+          </div>
+          <div class="row" style="padding-top: 13%">
+            <h1 class="ml5">
+              <span class="letters letters-1">HTML CSS JS</span>
+              <span class="letters letters-2">React.js</span>
+              <span class="letters letters-3">three.js</span>
+              <span class="letters letters-4">mongodb</span>
+              <span class="letters letters-5">node.js</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -95,8 +156,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-8 main-header">
-          <h1 class="muli-font-bold large-text">Research Projects</h1>
-          <h3 class="muli-font">2020-Present</h3>
+          <h1 class="muli-font-bold large-text" style="padding-left: 2%;">Research Projects</h1>
+          <h3 class="muli-font" style="padding-left: 2%;">2020-Present</h3>
         </div>
       </div>
       <div class="img-hover-zoom--brightness container-1" width="100%" height="auto" onclick="showWBD2()">
@@ -105,8 +166,8 @@
             <div style="text-align: center;">
               <div style="display: inline-block; text-align: left;">
                 <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">UX Research</h1>
-                <h3 class="muli-font-bold">Search Engine Optimization</h3>
-                <h3 class="muli-font">Warner Brothers Discovery - Summer 2022</h3>
+                <h3 class="muli-font-bold small-text">Search Engine Optimization</h3>
+                <h3 class="muli-font small-text">Warner Brothers Discovery - Summer 2022</h3>
               </div>
             </div>
           </div>
@@ -114,9 +175,6 @@
             <img class="portfolio-image img-fluid" src="img/porfolio/logo/WBDL.png">
           </div>
         </div>
-        <!-- <div>
-          <img src="/img/porfolio/thumb/WBD.png" class="portfolio-image">
-        </div> -->
       </div>
       <div class="img-hover-zoom--brightness container-2" width="100%" height="auto" onclick="showECO2()">
         <div class="row portfolio-item align-items-center">
@@ -127,8 +185,8 @@
             <div style="text-align: center;">
               <div style="display: inline-block; text-align: left;">
                 <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">UX Research</h1>
-                <h3 class="muli-font-bold">Restaurant Menu Design</h3>
-                <h3 class="muli-font">User Interface Design - Georgia Tech - Summer 2021</h3>
+                <h3 class="muli-font-bold small-text">Restaurant Menu Design</h3>
+                <h3 class="muli-font small-text">User Interface Design - Georgia Tech - Summer 2021</h3>
               </div>
             </div>
           </div>
@@ -140,8 +198,8 @@
             <div style="text-align: center;">
               <div style="display: inline-block; text-align: left;">
                 <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">Academic Research</h1>
-                <h3 class="muli-font-bold">Emotion Artificial Intelligence</h3>
-                <h3 class="muli-font">Georgia Tech - Spring 2022 to Present</h3>
+                <h3 class="muli-font-bold small-text">Emotion Artificial Intelligence</h3>
+                <h3 class="muli-font small-text">Georgia Tech - Spring 2022 to Present</h3>
               </div>
             </div>
           </div>
@@ -157,8 +215,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-8 main-header">
-          <h1 class="muli-font-bold large-text">Web Development Projects</h1>
-          <h3 class="muli-font">2019-Present</h3>
+          <h1 class="muli-font-bold large-text" style="padding-left: 2%;">Web Development Projects</h1>
+          <h3 class="muli-font" style="padding-left: 2%;">2019-Present</h3>
         </div>
       </div>
 
@@ -171,22 +229,22 @@
             <div style="text-align: center;">
               <div style="display: inline-block; text-align: left;">
                 <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">Re-Imagine Georgia Tech</h1>
-                <h3 class="muli-font-bold">3D/VR Web Development</h3>
-                <h3 class="muli-font">Graphic & Visual Design - Georgia Tech - Spring 2022</h3>
+                <h3 class="muli-font-bold small-text">3D/VR Web Development</h3>
+                <h3 class="muli-font small-text">Graphic & Visual Design - Georgia Tech - Spring 2022</h3>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="img-hover-zoom--brightness container-1" width="100%" height="auto" onclick="showCI()">
+      <div class="img-hover-zoom--brightness container-2" width="100%" height="auto" onclick="showCI()">
         <div class="row portfolio-item align-items-center">
           <div class="col-7">
             <div style="text-align: center;">
               <div style="display: inline-block; text-align: left;">
                 <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">Clutch.It</h1>
-                <h3 class="muli-font-bold">Project Manager - Web Development Club</h3>
-                <h3 class="muli-font">Georgia Tech - Spring 2022</h3>
+                <h3 class="muli-font-bold small-text">Project Manager - Web Development Club</h3>
+                <h3 class="muli-font small-text">Georgia Tech - Spring 2022</h3>
               </div>
             </div>
           </div>
@@ -196,7 +254,7 @@
         </div>
       </div>
 
-      <div class="img-hover-zoom--brightness container-2" width="100%" height="auto" onclick="showAA()">
+      <div class="img-hover-zoom--brightness container-1" width="100%" height="auto" onclick="showAA()">
         <div class="row portfolio-item align-items-center">
           <div class="col-5 align-middle" style="text-align: right;">
             <img class="portfolio-image img-fluid" src="img/porfolio/logo/ACTIONL.png">
@@ -205,22 +263,22 @@
             <div style="text-align: center;">
               <div style="display: inline-block; text-align: left;">
                 <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">Action Assembly</h1>
-                <h3 class="muli-font-bold">Developer - Web Development Club</h3>
-                <h3 class="muli-font">Georgia Tech - Fall 2021</h3>
+                <h3 class="muli-font-bold small-text">Developer - Web Development Club</h3>
+                <h3 class="muli-font small-text">Georgia Tech - Fall 2021</h3>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
-      <div class="img-hover-zoom--brightness container-1" width="100%" height="auto" onclick="showRTT()">
+
+      <div class="img-hover-zoom--brightness container-2" width="100%" height="auto" onclick="showRTT()">
         <div class="row portfolio-item align-items-center">
           <div class="col-7">
             <div style="text-align: center;">
               <div style="display: inline-block; text-align: left;">
                 <h1 class="muli-font-bold large-text" style="padding-bottom: 1%">React-Task-Tracker</h1>
-                <h3 class="muli-font-bold">Independent Project</h3>
-                <h3 class="muli-font">Fall 2021</h3>
+                <h3 class="muli-font-bold small-text">Independent Project</h3>
+                <h3 class="muli-font small-text">Fall 2021</h3>
               </div>
             </div>
           </div>
