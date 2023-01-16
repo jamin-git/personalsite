@@ -81,3 +81,6 @@ function showRTT() {
 function showRE() {
     window.open("https://github.com/jamin-git/ReImagine-Georgia-Tech");
 }
+function showCat() {
+  window.open("https://github.com/jamin-git/connect-at-georgia-tech");
+}
