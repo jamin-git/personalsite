@@ -2,7 +2,7 @@
 
   var developerString = document.querySelector("#typed-heading");
   var options = {
-    strings: ['Web Dev^3000', 'UX Research^3000', 'Web Design^3000'],
+    strings: ['Web Dev^3000', 'UX Research^3000', 'UX Design^3000', 'Web Design^3000'],
     typeSpeed: 200,
     backSpeed: 200,
     loop: true
